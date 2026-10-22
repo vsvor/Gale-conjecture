@@ -1,4 +1,4 @@
-# Borsuk minimax-diameter search and best-known configurations
+# Minimax diameter ratio search and best-known configurations
 
 Research software for finding finite point sets that are difficult to partition into parts of small diameter. The repository includes configurations in R³–R⁶, a dimension-independent evaluator, search and tuning tools, exact-decimal geometry certificates, fitted templates, and regression tests.
 
@@ -11,8 +11,8 @@ We maximize this ratio. A heuristic search score is not an exact value: a non-k-
 
 The [algorithms companion paper (PDF, v5)](paper_v5.pdf) describes the search,
 continuous optimization, vertex splitting, and verification procedures.
-The [LaTeX source](paper/paper_v5.tex) is included; the paper accompanies
-[*A counterexample to Gale's conjecture in R³*](paper/main_en.tex).
+The paper accompanies
+[*A counterexample to Gale's conjecture in R³*](https://arxiv.org/abs/2610.28828).
 
 ## Best-known results in this repository
 
