@@ -1,0 +1,27 @@
+{
+  "version": "tuner-1.0",
+  "dimension": 4,
+  "m": 61,
+  "k": 5,
+  "floating_lower": 0.9131485369907758,
+  "floating_upper": 0.9131485369907758,
+  "threshold_resolved": true,
+  "coordinate_decimal_digits": 17,
+  "duplicate_rows_separated_by_1e_minus_17": 0,
+  "witness_edges": 850,
+  "geometry": {
+    "lower_decimal": "0.913148536990",
+    "upper_decimal": "0.913148536991",
+    "bound_decimal_digits": 12,
+    "diameter_squared_integer": "10000000000000000120293888772747518",
+    "min_witness_squared_integer": "8338402506083942692737062451903818",
+    "max_part_squared_integer": "8338402506083942692737062451903818",
+    "distinct_points": 61
+  },
+  "run": {
+    "stage": "assembly_reverification",
+    "source": "geometry4d61/source_points.csv",
+    "not_a_new_search_result": true
+  },
+  "qualification": "Geometry and comparisons use integer arithmetic. Graph UNSAT results are not independently proof-logged. SLSQP/LP reports are numerical fixed-graph diagnostics, not optimality proofs."
+}

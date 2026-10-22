@@ -1,0 +1,37 @@
+{
+  "suite": "all",
+  "pattern": null,
+  "tests_run": 206,
+  "failures": 0,
+  "errors": 0,
+  "skipped": [
+    {
+      "test": "test_parallel_spawn_cycle (tests.test_distillation.IntegrationTests.test_parallel_spawn_cycle)",
+      "reason": "Native library not compiled"
+    },
+    {
+      "test": "test_native_loader_with_relative_dunder_file (tests.test_early_stop.ProcessAndCLITests.test_native_loader_with_relative_dunder_file)",
+      "reason": "Compile the optional native backend first."
+    },
+    {
+      "test": "test_duplicate_edges_and_peeling (tests.test_native_backend.NativeABI.test_duplicate_edges_and_peeling)",
+      "reason": "Build the optional native backend to run these checks."
+    },
+    {
+      "test": "test_invalid_input_status (tests.test_native_backend.NativeABI.test_invalid_input_status)",
+      "reason": "Build the optional native backend to run these checks."
+    },
+    {
+      "test": "test_random_graphs_match_python (tests.test_native_backend.NativeABI.test_random_graphs_match_python)",
+      "reason": "Build the optional native backend to run these checks."
+    },
+    {
+      "test": "test_native_and_python_agree (tests.test_surface_search.SearchTests.test_native_and_python_agree)",
+      "reason": "native solver not compiled"
+    }
+  ],
+  "elapsed_seconds": 26.48903493099988,
+  "successful": true,
+  "native_present": false,
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+}

@@ -1,0 +1,22 @@
+{
+  "verified": true,
+  "backend": "python",
+  "dimension": 3,
+  "m": 370,
+  "k": 4,
+  "witness_status": "UNSAT",
+  "lower_decimal": "0.887250503644",
+  "upper_decimal": "0.887250503645",
+  "bound_decimal_digits": 12,
+  "diameter_squared_integer": "9999999999999997430810467781802533000000000000000000000000000000000000000000000000",
+  "min_witness_squared_integer": "7872134562172546287136605832171997000000000000000000000000000000000000000000000000",
+  "max_part_squared_integer": "7872134562172546287136605832171997000000000000000000000000000000000000000000000000",
+  "distinct_points": 370,
+  "exact_boundary_membership_of_all_added_points": true,
+  "original_points_unchanged": true,
+  "original_hull_and_diameter_unchanged": true,
+  "source_points": 58,
+  "added_points": 312,
+  "qualification": "The upper bound is for the finite set, not for the whole hull. UNSAT is solver checked, not DRAT/LRAT independently verified.",
+  "strict_improvement_over_initial": false
+}

@@ -1,0 +1,24 @@
+{
+  "k": 4,
+  "generation": 2,
+  "original_point_count": 81,
+  "stage": "optimized",
+  "version": "1.0",
+  "protected_exceptions": [
+    9,
+    12,
+    16,
+    44,
+    50,
+    51,
+    52,
+    53,
+    54,
+    56
+  ],
+  "coordinates_sha256": "515e80e73ae381d6c050f1735b0d38413ab25ed89c278b703c042e8cbccc0220",
+  "rows_never_reordered_or_deleted": true,
+  "parent": "/mnt/data/distillation_work/reproduction_current/generations/0002/p00_c02/seed",
+  "seed": 3918421120,
+  "control": true
+}

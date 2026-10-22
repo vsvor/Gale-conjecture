@@ -1,0 +1,6 @@
+# Working ranges; use requirements-tested.txt to match the assembly environment.
+# Python >=3.10. No OpenAI SDK, PyTorch, SAT service or API key is required to run the research code.
+numpy>=1.26,<3
+scipy>=1.12,<2
+matplotlib>=3.8,<4
+Pillow>=10.2,<13

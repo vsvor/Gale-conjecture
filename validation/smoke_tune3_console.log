@@ -1,0 +1,35 @@
+[initial_evaluation] points=23 dimension=3 parts=4 backend=native
+[best_saved] reason=input_rechecked points=23 lower=0.875161234081 upper=0.875161234081 exact=True polish=not_polished
+[smooth_start] points=23 edges=127
+[slsqp_start] points=23 refresh=1 edges=127
+[polish] pass_number=1 gain=0 ratio=0.875161234081 solver_success=True linearized_gain=1.52452736843e-06
+[polish] pass_number=2 gain=0 ratio=0.875161234081 solver_success=True linearized_gain=1.52452736843e-06
+[best_saved] reason=initial_polishing points=23 lower=0.875161234081 upper=0.875161234081 exact=True polish=polish_budget_exhausted
+[cycle_start] cycle=1 best=0.875161234081 points=23
+[trial_start] cycle=1 trial=1 points=23 kind=old_points_new_witness
+[smooth_start] points=23 edges=127
+[slsqp_start] points=23 refresh=1 edges=127
+[polish] pass_number=1 gain=0 ratio=0.875161234081 solver_success=True linearized_gain=1.52452736852e-06
+[polish] pass_number=2 gain=0 ratio=0.875161234081 solver_success=True linearized_gain=1.52452736852e-06
+[cycle_finished] cycle=1 best=0.875161234081 points=23 calls=26 unknowns=0 cache_hits=6
+[final_polish] points=23 ratio=0.875161234081
+[slsqp_start] points=23 refresh=1 edges=127
+[polish] pass_number=1 gain=0 ratio=0.875161234081 solver_success=True linearized_gain=1.52452736852e-06
+[polish] pass_number=2 gain=0 ratio=0.875161234081 solver_success=True linearized_gain=1.52452736852e-06
+{
+  "initial_points": 23,
+  "initial_lower": 0.8751612340807935,
+  "initial_upper": 0.8751612340807935,
+  "best_points": 23,
+  "best_lower": 0.8751612340807935,
+  "best_upper": 0.8751612340807935,
+  "exact_ratio_squared": "7659071856378175037056104502181025/10000000000000000906428423730027997",
+  "best_directory": "/mnt/data/borsuk_project/experiments/assembly-smoke_tune3/result/best",
+  "polish_status": "polish_budget_exhausted",
+  "oracle": {
+    "calls": 26,
+    "unknowns": 0,
+    "cache_hits": 6
+  },
+  "elapsed_seconds": 0.12711957600004098
+}

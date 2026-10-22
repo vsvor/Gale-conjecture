@@ -1,0 +1,38 @@
+{
+  "version": "tuner-1.0",
+  "dimension": 3,
+  "m": 65,
+  "k": 4,
+  "floating_lower": 0.8881115021013999,
+  "floating_upper": 0.8881115021013999,
+  "threshold_resolved": true,
+  "coordinate_decimal_digits": 17,
+  "duplicate_rows_separated_by_1e_minus_17": 0,
+  "witness_edges": 859,
+  "geometry": {
+    "lower_decimal": "0.888111502101",
+    "upper_decimal": "0.888111502102",
+    "bound_decimal_digits": 12,
+    "diameter_squared_integer": "9999999999999999094960362369183995",
+    "min_witness_squared_integer": "7887420401648046950672144846523981",
+    "max_part_squared_integer": "7887420401648046950672144846523981",
+    "distinct_points": 65
+  },
+  "run": {
+    "stage": "exact_decimal_certification",
+    "source": "best_known/3d_65p_088808/points65_precise.csv",
+    "source_sha256": "5f0a206cdc53099b3d14ff22d29a8b587ae7bfd9c664304e8dc7c27677859c40",
+    "backend": "native",
+    "sat_timeout_seconds": 10.0,
+    "seed": null,
+    "coordinates_optimized": false,
+    "rows_reordered_or_deleted": false,
+    "coordinate_representation": "unchanged rational coordinates from points65_precise.csv",
+    "oracle_stats": {
+      "calls": 10,
+      "unknowns": 0,
+      "cache_hits": 0
+    }
+  },
+  "qualification": "Geometry and comparisons use integer arithmetic. Graph UNSAT results are not independently proof-logged. SLSQP/LP reports are numerical fixed-graph diagnostics, not optimality proofs."
+}

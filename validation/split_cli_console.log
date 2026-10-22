@@ -1,0 +1,27 @@
+best_saved {"reason": "input_rechecked", "points": 23, "lower": 0.8751612340807935, "upper": 0.8751612340807935, "exact": true, "polish": "not_polished"}
+round {"number": 1, "points": 23, "lower": 0.8751612340807935, "upper": 0.8751612340807935}
+screen {"vertices": 23, "witness_edges": 127, "near_shortest_edges": 36, "edge_deletion_UNKNOWN": 0, "split_SAT": 2, "split_UNSAT": 0, "split_UNKNOWN": 0, "LP_failed": 0, "positive_LP": 0, "screen_limit_reached": true, "critical_near_shortest_edges": 36, "split_tests": 2}
+slsqp_start {"points": 23, "refresh": 1, "edges": 127}
+polish {"pass_number": 1, "gain": 0.0, "ratio": 0.8751612340807935, "solver_success": true, "linearized_gain": 1.5245273685215465e-06}
+best_saved {"reason": "final_full_constraint_polish", "points": 23, "lower": 0.8751612340807935, "upper": 0.8751612340807935, "exact": true, "polish": "polish_budget_exhausted"}
+{
+  "version": "1.0",
+  "initial_points": 23,
+  "initial_lower": 0.8751612340807935,
+  "initial_upper": 0.8751612340807935,
+  "best_points": 23,
+  "best_lower": 0.8751612340807935,
+  "best_upper": 0.8751612340807935,
+  "exact_ratio_squared": "957383982047271876822414022912662/1250000000000000090393960545647157",
+  "accepted_rounds": 0,
+  "search_stop": "no_selected_split_in_tested_family",
+  "polish_status": "polish_budget_exhausted",
+  "backend": "native",
+  "oracle": {
+    "calls": 39,
+    "unknowns": 0,
+    "cache_hits": 0
+  },
+  "seconds": 0.03526861299997108,
+  "qualification": "No global or exact local optimality claim. Zero LP gain is numerical and only concerns the tested split family."
+}

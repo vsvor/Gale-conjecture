@@ -1,0 +1,38 @@
+{
+  "description": "smoke core4",
+  "timeout_seconds": 180,
+  "inputs": [
+    "templates/source4.csv"
+  ],
+  "command": [
+    "{python}",
+    "core_seed.py",
+    "generate",
+    "--dim",
+    "4",
+    "--points",
+    "31",
+    "--method",
+    "signature",
+    "--attempts",
+    "1",
+    "--warmup-rounds",
+    "1",
+    "--steps",
+    "5",
+    "--prune-checks",
+    "10",
+    "--pool-factor",
+    "3",
+    "--core-orders",
+    "1",
+    "--seed",
+    "{seed}",
+    "--backend",
+    "{backend}",
+    "--sat-timeout",
+    "3",
+    "--out",
+    "{out}"
+  ]
+}

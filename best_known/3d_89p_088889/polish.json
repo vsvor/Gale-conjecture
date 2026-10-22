@@ -1,0 +1,125 @@
+{
+  "status": "budgeted_local_search",
+  "rounds": [
+    {
+      "round": 1,
+      "slack": "0",
+      "pruned_edges": 1457,
+      "trial": {
+        "minimum_separation_over_diameter": 3.612478373637689e-16,
+        "points": 89,
+        "lower": 0.8888851216649496,
+        "upper": 0.8888851216649496,
+        "exact": true,
+        "lower_squared": [
+          "3950583797586560415089084128506757",
+          "4999999999999999215834407325388091"
+        ],
+        "upper_squared": [
+          "3950583797586560415089084128506757",
+          "4999999999999999215834407325388091"
+        ],
+        "coordinates_sha256": "c0e3d57771cc89c6627160f79e664c839f6c62f76d742f53dfd8ab77bd36032e"
+      },
+      "retained": true,
+      "polishing": [
+        {
+          "runs": [
+            {
+              "success": true,
+              "status": 0,
+              "message": "Optimization terminated successfully",
+              "iterations": 90,
+              "full_constraint_violation": 1.097586518672422e-05,
+              "feasible": false,
+              "diameter_constraints": 536,
+              "missing_violated_constraints": 1,
+              "ftol": 1e-12
+            },
+            {
+              "success": true,
+              "status": 0,
+              "message": "Optimization terminated successfully",
+              "iterations": 6,
+              "full_constraint_violation": 1.9984014443252818e-15,
+              "feasible": true,
+              "diameter_constraints": 537,
+              "missing_violated_constraints": 0,
+              "ftol": 1e-12
+            }
+          ],
+          "all_diameter_constraints_checked": true,
+          "terminal_success": true,
+          "terminal_matches_retained_ratio": true,
+          "retained_ratio": 0.8888851216649496
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "slack": "1/250",
+      "pruned_edges": 1455,
+      "trial": {
+        "minimum_separation_over_diameter": 3.9572717874818753e-16,
+        "points": 89,
+        "lower": 0.8888923464654452,
+        "upper": 0.8888923464654452,
+        "exact": true,
+        "lower_squared": [
+          "7901296036048453246881553750182450",
+          "10000000000000001768183441369476061"
+        ],
+        "upper_squared": [
+          "7901296036048453246881553750182450",
+          "10000000000000001768183441369476061"
+        ],
+        "coordinates_sha256": "515e80e73ae381d6c050f1735b0d38413ab25ed89c278b703c042e8cbccc0220"
+      },
+      "retained": true,
+      "polishing": [
+        {
+          "runs": [
+            {
+              "success": true,
+              "status": 0,
+              "message": "Optimization terminated successfully",
+              "iterations": 58,
+              "full_constraint_violation": 0.022104158902633397,
+              "feasible": false,
+              "diameter_constraints": 482,
+              "missing_violated_constraints": 23,
+              "ftol": 1e-12
+            },
+            {
+              "success": true,
+              "status": 0,
+              "message": "Optimization terminated successfully",
+              "iterations": 50,
+              "full_constraint_violation": 0.0015767918194953268,
+              "feasible": false,
+              "diameter_constraints": 505,
+              "missing_violated_constraints": 3,
+              "ftol": 1e-12
+            },
+            {
+              "success": true,
+              "status": 0,
+              "message": "Optimization terminated successfully",
+              "iterations": 39,
+              "full_constraint_violation": 1.7763568394002505e-15,
+              "feasible": true,
+              "diameter_constraints": 508,
+              "missing_violated_constraints": 0,
+              "ftol": 1e-12
+            }
+          ],
+          "all_diameter_constraints_checked": true,
+          "terminal_success": true,
+          "terminal_matches_retained_ratio": true,
+          "retained_ratio": 0.8888923464654452
+        }
+      ]
+    }
+  ],
+  "qualification": "Repeated local calls, not a stationarity or global optimality certificate."
+}

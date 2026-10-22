@@ -1,0 +1,55 @@
+{
+  "cwd": "/mnt/data/borsuk_project",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "tune_solution.py",
+    "examples/d3_m23",
+    "--k",
+    "4",
+    "--cycles",
+    "1",
+    "--witness-trials",
+    "1",
+    "--trials",
+    "0",
+    "--slacks",
+    "0",
+    "--edge-prune",
+    "20",
+    "--steps",
+    "3",
+    "--delete-checks",
+    "0",
+    "--no-compact-trials",
+    "--refreshes",
+    "1",
+    "--slsqp-iters",
+    "10",
+    "--polish-passes",
+    "2",
+    "--polish-kicks",
+    "0",
+    "--seed",
+    "20260911",
+    "--backend",
+    "native",
+    "--sat-timeout",
+    "3",
+    "--out",
+    "/mnt/data/borsuk_project/experiments/assembly-smoke_tune3/result"
+  ],
+  "timeout_seconds": 180,
+  "inputs": {
+    "/mnt/data/borsuk_project/examples/d3_m23/points.csv": "c7d4e44f8ad2c89578219707ef4f676891cec37411fb59dde35f81352e0fe1e1"
+  },
+  "output": "/mnt/data/borsuk_project/experiments/assembly-smoke_tune3"
+}
+Console output is recorded in /mnt/data/borsuk_project/experiments/assembly-smoke_tune3/console.log
+{
+  "status": "completed",
+  "exit_code": 0,
+  "elapsed_seconds": 1.1201190500000848,
+  "run": "/mnt/data/borsuk_project/experiments/assembly-smoke_tune3",
+  "source_changed_during_run": false
+}
+

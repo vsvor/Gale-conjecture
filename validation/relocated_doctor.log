@@ -1,0 +1,20 @@
+{
+  "python": "3.13.5 (main, Jun 25 2025, 18:55:22) [GCC 14.2.0]",
+  "executable": "/mnt/data/_relocated_workspace/borsuk_project/.venv/bin/python",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "repository": "/mnt/data/_relocated_workspace/borsuk_project",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "Pillow": "12.3.0"
+  },
+  "codex_path": null,
+  "compiler": "/usr/bin/c++",
+  "issues": [],
+  "native": {
+    "present": true,
+    "validated": true
+  },
+  "ready": true
+}

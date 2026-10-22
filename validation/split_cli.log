@@ -1,0 +1,41 @@
+{
+  "cwd": "/mnt/data/borsuk_project",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "split_tune.py",
+    "examples/d3_m23",
+    "--rounds",
+    "1",
+    "--no-reduce",
+    "--max-omit",
+    "1",
+    "--screen-limit",
+    "2",
+    "--trials",
+    "1",
+    "--slsqp-iters",
+    "5",
+    "--polish-passes",
+    "1",
+    "--backend",
+    "native",
+    "--sat-timeout",
+    "2",
+    "--seed",
+    "20260911",
+    "--out",
+    "/mnt/data/borsuk_project/experiments/assembly-split/result"
+  ],
+  "timeout_seconds": 60.0,
+  "inputs": {},
+  "output": "/mnt/data/borsuk_project/experiments/assembly-split"
+}
+Console output is recorded in /mnt/data/borsuk_project/experiments/assembly-split/console.log
+{
+  "status": "completed",
+  "exit_code": 0,
+  "elapsed_seconds": 1.1203352649999943,
+  "run": "/mnt/data/borsuk_project/experiments/assembly-split",
+  "source_changed_during_run": false
+}
+

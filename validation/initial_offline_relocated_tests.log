@@ -1,0 +1,254 @@
+tests.test_borsuk_search (unittest.loader._FailedTest.tests.test_borsuk_search) ... ERROR
+test_complete_saved_cover_geometry (tests.test_boundary_workspace.BoundaryWorkspace.test_complete_saved_cover_geometry) ... ok
+test_cube_skeleton_excludes_face_diagonals (tests.test_boundary_workspace.BoundaryWorkspace.test_cube_skeleton_excludes_face_diagonals) ... ok
+test_missing_cover_edge_rejected (tests.test_boundary_workspace.BoundaryWorkspace.test_missing_cover_edge_rejected) ... ok
+tests.test_core_seed (unittest.loader._FailedTest.tests.test_core_seed) ... ERROR
+tests.test_distillation (unittest.loader._FailedTest.tests.test_distillation) ... ERROR
+tests.test_early_stop (unittest.loader._FailedTest.tests.test_early_stop) ... ERROR
+test_dry_run_is_read_only (tests.test_experiment_runner.ExperimentRunnerTests.test_dry_run_is_read_only) ... ok
+test_existing_output_is_not_overwritten (tests.test_experiment_runner.ExperimentRunnerTests.test_existing_output_is_not_overwritten) ... ok
+test_expand_keeps_arguments_literal (tests.test_experiment_runner.ExperimentRunnerTests.test_expand_keeps_arguments_literal) ... ok
+test_expansion_rejects_empty_command (tests.test_experiment_runner.ExperimentRunnerTests.test_expansion_rejects_empty_command) ... ok
+test_failed_child_is_not_success (tests.test_experiment_runner.ExperimentRunnerTests.test_failed_child_is_not_success) ... ok
+test_input_mutation_is_reported (tests.test_experiment_runner.ExperimentRunnerTests.test_input_mutation_is_reported) ... ok
+test_launch_failure_retains_metadata (tests.test_experiment_runner.ExperimentRunnerTests.test_launch_failure_retains_metadata) ... ok
+test_long_budget_requires_explicit_gate (tests.test_experiment_runner.ExperimentRunnerTests.test_long_budget_requires_explicit_gate) ... ok
+test_success_records_hashes_without_inventing_results (tests.test_experiment_runner.ExperimentRunnerTests.test_success_records_hashes_without_inventing_results) ... ok
+test_timeout_is_logged_and_stops_child (tests.test_experiment_runner.ExperimentRunnerTests.test_timeout_is_logged_and_stops_child) ... ok
+tests.test_native_backend (unittest.loader._FailedTest.tests.test_native_backend) ... ERROR
+tests.test_paired_replay (unittest.loader._FailedTest.tests.test_paired_replay) ... ERROR
+tests.test_split_tune (unittest.loader._FailedTest.tests.test_split_tune) ... ERROR
+tests.test_structured_seed (unittest.loader._FailedTest.tests.test_structured_seed) ... ERROR
+tests.test_surface_search (unittest.loader._FailedTest.tests.test_surface_search) ... ERROR
+tests.test_tune_solution (unittest.loader._FailedTest.tests.test_tune_solution) ... ERROR
+tests.test_viewer_workspace (unittest.loader._FailedTest.tests.test_viewer_workspace) ... ERROR
+test_one_canonical_engine_import (tests.test_workspace.WorkspaceTests.test_one_canonical_engine_import) ... ERROR
+test_paired_splits_rejects_saved_k5_before_writing (tests.test_workspace.WorkspaceTests.test_paired_splits_rejects_saved_k5_before_writing) ... FAIL
+test_presets_are_explicit_argv_and_bounded (tests.test_workspace.WorkspaceTests.test_presets_are_explicit_argv_and_bounded) ... ok
+test_standalone_structured_seed_resolves_resources_from_elsewhere (tests.test_workspace.WorkspaceTests.test_standalone_structured_seed_resolves_resources_from_elsewhere) ... ok
+test_template_identity (tests.test_workspace.WorkspaceTests.test_template_identity) ... ok
+
+======================================================================
+ERROR: tests.test_borsuk_search (unittest.loader._FailedTest.tests.test_borsuk_search)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests.test_borsuk_search
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/_relocated_workspace/borsuk_project/tests/test_borsuk_search.py", line 8, in <module>
+    import borsuk_search as b
+  File "/mnt/data/_relocated_workspace/borsuk_project/borsuk_search.py", line 47, in <module>
+    from scipy.optimize import minimize
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: tests.test_core_seed (unittest.loader._FailedTest.tests.test_core_seed)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests.test_core_seed
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/_relocated_workspace/borsuk_project/tests/test_core_seed.py", line 7, in <module>
+    import core_seed as c
+  File "/mnt/data/_relocated_workspace/borsuk_project/core_seed.py", line 26, in <module>
+    import borsuk_search as bs  # Also limits BLAS threading before importing NumPy.
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/_relocated_workspace/borsuk_project/borsuk_search.py", line 47, in <module>
+    from scipy.optimize import minimize
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: tests.test_distillation (unittest.loader._FailedTest.tests.test_distillation)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests.test_distillation
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/_relocated_workspace/borsuk_project/tests/test_distillation.py", line 9, in <module>
+    from scipy.optimize import minimize_scalar
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: tests.test_early_stop (unittest.loader._FailedTest.tests.test_early_stop)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests.test_early_stop
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/_relocated_workspace/borsuk_project/tests/test_early_stop.py", line 18, in <module>
+    import borsuk_search as b
+  File "/mnt/data/_relocated_workspace/borsuk_project/borsuk_search.py", line 47, in <module>
+    from scipy.optimize import minimize
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: tests.test_native_backend (unittest.loader._FailedTest.tests.test_native_backend)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests.test_native_backend
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/_relocated_workspace/borsuk_project/tests/test_native_backend.py", line 5, in <module>
+    import borsuk_search as bs
+  File "/mnt/data/_relocated_workspace/borsuk_project/borsuk_search.py", line 47, in <module>
+    from scipy.optimize import minimize
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: tests.test_paired_replay (unittest.loader._FailedTest.tests.test_paired_replay)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests.test_paired_replay
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/_relocated_workspace/borsuk_project/tests/test_paired_replay.py", line 8, in <module>
+    import borsuk_search as bs
+  File "/mnt/data/_relocated_workspace/borsuk_project/borsuk_search.py", line 47, in <module>
+    from scipy.optimize import minimize
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: tests.test_split_tune (unittest.loader._FailedTest.tests.test_split_tune)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests.test_split_tune
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/_relocated_workspace/borsuk_project/tests/test_split_tune.py", line 8, in <module>
+    import borsuk_search as bs
+  File "/mnt/data/_relocated_workspace/borsuk_project/borsuk_search.py", line 47, in <module>
+    from scipy.optimize import minimize
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: tests.test_structured_seed (unittest.loader._FailedTest.tests.test_structured_seed)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests.test_structured_seed
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/_relocated_workspace/borsuk_project/tests/test_structured_seed.py", line 5, in <module>
+    import compare_curves as cc
+  File "/mnt/data/_relocated_workspace/borsuk_project/compare_curves.py", line 13, in <module>
+    from scipy.optimize import least_squares
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: tests.test_surface_search (unittest.loader._FailedTest.tests.test_surface_search)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests.test_surface_search
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/_relocated_workspace/borsuk_project/tests/test_surface_search.py", line 13, in <module>
+    import borsuk_search as bs
+  File "/mnt/data/_relocated_workspace/borsuk_project/borsuk_search.py", line 47, in <module>
+    from scipy.optimize import minimize
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: tests.test_tune_solution (unittest.loader._FailedTest.tests.test_tune_solution)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests.test_tune_solution
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/_relocated_workspace/borsuk_project/tests/test_tune_solution.py", line 13, in <module>
+    import borsuk_search as bs
+  File "/mnt/data/_relocated_workspace/borsuk_project/borsuk_search.py", line 47, in <module>
+    from scipy.optimize import minimize
+ModuleNotFoundError: No module named 'scipy'
+
+
+======================================================================
+ERROR: tests.test_viewer_workspace (unittest.loader._FailedTest.tests.test_viewer_workspace)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: tests.test_viewer_workspace
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/unittest/loader.py", line 396, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.13/unittest/loader.py", line 339, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/mnt/data/_relocated_workspace/borsuk_project/tests/test_viewer_workspace.py", line 10, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+
+
+======================================================================
+ERROR: test_one_canonical_engine_import (tests.test_workspace.WorkspaceTests.test_one_canonical_engine_import)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/_relocated_workspace/borsuk_project/tests/test_workspace.py", line 16, in test_one_canonical_engine_import
+    engine=importlib.import_module('borsuk_search')
+  File "/usr/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/mnt/data/_relocated_workspace/borsuk_project/borsuk_search.py", line 47, in <module>
+    from scipy.optimize import minimize
+ModuleNotFoundError: No module named 'scipy'
+
+======================================================================
+FAIL: test_paired_splits_rejects_saved_k5_before_writing (tests.test_workspace.WorkspaceTests.test_paired_splits_rejects_saved_k5_before_writing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/_relocated_workspace/borsuk_project/tests/test_workspace.py", line 30, in test_paired_splits_rejects_saved_k5_before_writing
+    self.assertEqual(p.returncode,2,p.stdout+p.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 2 : Traceback (most recent call last):
+  File "/mnt/data/_relocated_workspace/borsuk_project/paired_splits.py", line 11, in <module>
+    import borsuk_search as bs
+  File "/mnt/data/_relocated_workspace/borsuk_project/borsuk_search.py", line 47, in <module>
+    from scipy.optimize import minimize
+ModuleNotFoundError: No module named 'scipy'
+
+
+----------------------------------------------------------------------
+Ran 29 tests in 2.194s
+
+FAILED (failures=1, errors=12)

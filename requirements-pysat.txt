@@ -1,0 +1,2 @@
+# Optional. Adapters exist but actual PySAT runs were not validated in this bundle.
+python-sat

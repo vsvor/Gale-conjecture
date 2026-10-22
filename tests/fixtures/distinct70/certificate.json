@@ -1,0 +1,31 @@
+{
+  "version": "tuner-1.0",
+  "dimension": 3,
+  "m": 70,
+  "k": 4,
+  "floating_lower": 0.8878496018804399,
+  "floating_upper": 0.8878496018804399,
+  "threshold_resolved": true,
+  "coordinate_decimal_digits": 62,
+  "duplicate_rows_separated_by_1e_minus_17": 0,
+  "witness_edges": 988,
+  "geometry": {
+    "lower_decimal": "0.887849601880",
+    "upper_decimal": "0.887849601881",
+    "bound_decimal_digits": 12,
+    "diameter_squared_integer": "10000000000000001039621640426578066327052227375825776063654061118812278220746581069988678791560232639312744140625000000000000",
+    "min_witness_squared_integer": "7882769155592557942530522400834328075211021834365813171588658808852050736363376026716309752373490482568740844726562500000000",
+    "max_part_squared_integer": "7882769155592557942530522400834328075211021834365813171588658808852050736363376026716309752373490482568740844726562500000000",
+    "distinct_points": 70
+  },
+  "run": {
+    "removed_original_indices": [
+      67,
+      68,
+      69
+    ],
+    "source_ratio": 0.8878496018804405,
+    "qualification": "Exploratory near-duplicate removal; not asserted to preserve exact original ratio."
+  },
+  "qualification": "Geometry and comparisons use integer arithmetic. Graph UNSAT results are not independently proof-logged. SLSQP/LP reports are numerical fixed-graph diagnostics, not optimality proofs."
+}

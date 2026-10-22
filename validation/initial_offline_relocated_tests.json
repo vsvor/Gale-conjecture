@@ -1,0 +1,12 @@
+{
+  "suite": "all",
+  "pattern": null,
+  "tests_run": 29,
+  "failures": 1,
+  "errors": 12,
+  "skipped": [],
+  "elapsed_seconds": 2.1939822560000266,
+  "successful": false,
+  "native_present": false,
+  "python": "3.13.5 (main, Jun 25 2025, 18:55:22) [GCC 14.2.0]"
+}

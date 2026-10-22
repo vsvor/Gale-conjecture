@@ -1,0 +1,306 @@
+--- imported/paired_splits.py
++++ assembled/paired_splits.py
+@@ -20,7 +20,11 @@
+  p.add_argument('--first-limit',type=int,default=0);p.add_argument('--zero-trials',type=int,default=24)
+  p.add_argument('--jitter',type=float,default=0.01);p.add_argument('--sat-timeout',type=float,default=2.)
+  p.add_argument('--backend',default='native');p.add_argument('--solver',default='kissat')
+- a=p.parse_args();a.out.mkdir(exist_ok=False,parents=True)
++ a=p.parse_args()
++ _,_,_,saved_k=ts.load_source(a.start)
++ if saved_k is not None and saved_k != 4:
++  p.error('paired_splits.py currently supports k=4 only; this saved input declares a different k.')
++ a.out.mkdir(exist_ok=False,parents=True)
+  args=ts.build_parser().parse_args([str(a.start),'--backend',a.backend,'--solver',a.solver,'--sat-timeout',str(a.sat_timeout)])
+  args.full_constraints=False;args.slsqp_iters=350
+  pool=ts.OraclePool(4,args);rng=np.random.default_rng(a.seed);start=time.monotonic();stats={}
+--- imported/structured_seed.py
++++ assembled/structured_seed.py
+@@ -200,9 +200,9 @@
+     if a.jitter<0 or not 0<=a.residual_fraction<=1:p.error('Invalid jitter or residual fraction.')
+     if a.out.exists():p.error('Use a new output directory.')
+     try:
+-        template=json.loads((ROOT/'source/best_model.json').read_text())
+-        comparison=json.loads((ROOT/'results/comparison.json').read_text())
+-        source=np.load(ROOT/'source/points.npy',allow_pickle=False)
++        template=json.loads((ROOT/'templates/curves3.json').read_text())
++        comparison=json.loads((ROOT/'templates/curves3_comparison.json').read_text())
++        source=np.load(ROOT/'templates/source3.npy',allow_pickle=False)
+         sourcehash=hashlib.sha256(np.asarray(source,dtype='<f8').tobytes()).hexdigest()
+         if sourcehash!=template['input_array_sha256']:raise ValueError('Source coordinates do not match the template.')
+         x,records=make_seed(template,comparison,source,a.points,a.kind,a.jitter,a.residual_fraction,a.seed)
+--- imported/compare_curves.py
++++ assembled/compare_curves.py
+@@ -106,11 +106,12 @@
+     parser.add_argument('--radius',type=float,default=.25)
+     parser.add_argument('--restarts',type=int,default=16)
+     parser.add_argument('--seed',type=int,default=20260910)
+-    parser.add_argument('--out',type=Path,default=ROOT/'results/comparison.json')
++    parser.add_argument('--out',type=Path,default=ROOT/'experiments/curve_comparison.json')
+     args=parser.parse_args(argv)
++    if args.out.exists(): parser.error('Use a new output file; an existing fit must not be overwritten.')
+     if args.radius<=0 or args.restarts<1:parser.error('Radius and restarts must be positive.')
+-    source=np.load(ROOT/'source/points.npy',allow_pickle=False)
+-    model=json.loads((ROOT/'source/best_model.json').read_text())
++    source=np.load(ROOT/'templates/source3.npy',allow_pickle=False)
++    model=json.loads((ROOT/'templates/curves3.json').read_text())
+     if hashlib.sha256(np.asarray(source,dtype='<f8').tobytes()).hexdigest()!=model['input_array_sha256']:
+         raise ValueError('Source fingerprint differs from the fitted 81-point configuration.')
+     fr=model['frame'];y=(source-np.array(fr['origin']))@np.array(fr['basis_columns_a_b_n'])/fr['diameter']
+--- imported/view_solution.py
++++ assembled/view_solution.py
+@@ -185,7 +185,7 @@
+             segments.append((xyz[np.asarray(edges, dtype=int)], 'hull'))
+ 
+         import matplotlib
+-        if args.no_show or args.save or args.gif:
++        if args.no_show:
+             matplotlib.use('Agg')
+         import matplotlib.pyplot as plt
+         from matplotlib import animation
+--- imported/tests/test_tune_solution.py
++++ assembled/tests/test_tune_solution.py
+@@ -278,7 +278,7 @@
+             p.close()
+ 
+     def test_original_49_point_reduction(self):
+-        source = Path(__file__).parent/'examples'/'d3_m49'
++        source = Path(__file__).resolve().parents[1]/'examples'/'d3_m49'
+         p = t.OraclePool(4, arguments())
+         try:
+             g, w, c, _ = t.load_source(source)
+@@ -293,7 +293,7 @@
+ 
+ class IntegrationTests(unittest.TestCase):
+     def test_geometric_insertion_proposals(self):
+-        source = Path(__file__).parent/'examples'/'d3_m23'
++        source = Path(__file__).resolve().parents[1]/'examples'/'d3_m23'
+         a = arguments('--candidates', '200', '--refine-candidates', '4',
+                       '--trials', '1', '--candidate-attempts', '500',
+                       '--slacks', '0.15', '--edge-prune', '10', '--add', '1:2')
+--- imported/tests/test_split_tune.py
++++ assembled/tests/test_split_tune.py
+@@ -89,7 +89,7 @@
+         self.assertEqual([s.vertex for s in selected], [0, 1, 2])
+ 
+     def test_actual_user_configuration_split(self):
+-        path = Path(__file__).parent/'examples'/'d3_m46'
++        path = Path(__file__).resolve().parents[1]/'examples'/'d3_m46'
+         args = ts.build_parser().parse_args([str(path), '--backend', 'python',
+                                            '--sat-timeout', '10', '--slsqp-iters', '200'])
+         pool = ts.OraclePool(4, args)
+--- imported/tests/test_paired_replay.py
++++ assembled/tests/test_paired_replay.py
+@@ -42,11 +42,11 @@
+             self.assertEqual(set(map(tuple,bs.pairs_for(m+2)[w2])),expected)
+ 
+     def test_actual_pair_scaffold_noncolorability_and_essential_copies(self):
+-        root = Path(__file__).resolve().parent
+-        args=ts.build_parser().parse_args([str(root/'distinct70'), '--backend','python','--sat-timeout','20'])
++        root = Path(__file__).resolve().parents[1]
++        args=ts.build_parser().parse_args([str(root/'tests/fixtures/distinct70'), '--backend','python','--sat-timeout','20'])
+         pool=ts.OraclePool(4,args)
+         try:
+-            g,w,c,k=ts.load_source(root/'distinct70')
++            g,w,c,k=ts.load_source(root/'tests/fixtures/distinct70')
+             s=ts.assess(g,pool,w,c)
+             w1=st.split_edge_ids(70,g.pairs[g.threshold(s.lower2)],26,(45,),(64,))
+             self.assertIs(pool.get(71).solve(w1).status,bs.Status.UNSAT)
+@@ -62,9 +62,7 @@
+     def test_input_file_unchanged(self):
+         import hashlib
+         from replay_pair73 import INPUT_SHA256
+-        p=Path('/mnt/data/points(3)(1).npy')
+-        if not p.exists():
+-            p=Path(__file__).resolve().parent/'input'/'original.npy'
++        p=Path(__file__).resolve().parents[1]/'tests/fixtures/original73.npy'
+         self.assertEqual(hashlib.sha256(p.read_bytes()).hexdigest(),INPUT_SHA256)
+ 
+ if __name__=='__main__':unittest.main()
+--- imported/tests/test_distillation.py
++++ assembled/tests/test_distillation.py
+@@ -12,7 +12,7 @@
+ import tune_solution as ts
+ import curve_model as cm
+ import distill_search as ds
+-ROOT=Path(__file__).resolve().parent
++ROOT=Path(__file__).resolve().parents[1]
+ 
+ 
+ class GeometryTests(unittest.TestCase):
+--- imported/tests/test_surface_search.py
++++ assembled/tests/test_surface_search.py
+@@ -13,7 +13,7 @@
+ import borsuk_search as bs
+ import surface_search as ss
+ 
+-ROOT = Path(__file__).resolve().parent
++ROOT = Path(__file__).resolve().parents[1]
+ SQUARE = [(0, 0), (1, 0), (1, 1), (0, 1)]
+ 
+ 
+--- imported/tests/test_structured_seed.py
++++ assembled/tests/test_structured_seed.py
+@@ -5,14 +5,14 @@
+ import compare_curves as cc
+ import structured_seed as ss
+ 
+-R=Path(__file__).resolve().parent
++R=Path(__file__).resolve().parents[1]
+ 
+ class GeometryTests(unittest.TestCase):
+     @classmethod
+     def setUpClass(cls):
+-        cls.source=np.load(R/'source/points.npy')
+-        cls.template=json.loads((R/'source/best_model.json').read_text())
+-        cls.comparison=json.loads((R/'results/comparison.json').read_text())
++        cls.source=np.load(R/'templates/source3.npy')
++        cls.template=json.loads((R/'templates/curves3.json').read_text())
++        cls.comparison=json.loads((R/'templates/curves3_comparison.json').read_text())
+ 
+     def test_frame(self):
+         B=np.array(self.template['frame']['basis_columns_a_b_n'])
+--- imported/docs/architecture.md
++++ assembled/docs/architecture.md
+@@ -10,6 +10,12 @@
+ \]
+ 
+ The project is experimental optimization software, but its saved lower and upper bounds are intended to have a much stricter semantics than its heuristic search steps. Keep that distinction visible in the architecture.
++
++**Consolidated-workspace edition.** This file updates the previously supplied architecture
++map to match the assembled source tree. Setup/tests are in `scripts/`; current commands
++are in [development.md](development.md). Imported historical READMEs are under
++`history/` and are not competing source trees. See [assembly.md](assembly.md) for the
++small compatibility edits made during consolidation.
+ 
+ ## 1. Architectural layers
+ 
+@@ -118,13 +124,26 @@
+ certificate.json
+ ```
+ 
+-`tune_solution.py` additionally writes `polish.json`.
+-
+-For certified saved results, `points.csv` is the canonical decimal representation used for integer squared-distance comparisons. `points.npy` is a convenient numerical copy and may have slightly different exact binary arithmetic.
++`tune_solution.py` additionally writes `polish.json`. Workflow checkpoints can add
++surface-membership, model, lineage and manifest files; those are not interchangeable.
++
++For engine/tuner and ordinary workflow certificates, `points.csv` is the canonical
++decimal representation used for integer squared-distance comparisons. `points.npy`
++is a convenient numerical copy and may have different exact binary arithmetic.
++**Exception:** standalone `structured_seed.py` validates its binary NPY values and
++explicitly labels its CSV as a convenience representation. Do not transfer that seed
++promise to a later CSV export without recomputing it.
+ 
+ ### 2.5 The verified incumbent is separate from exploratory state
+ 
+-Research scripts are allowed to keep neutral, temporarily worse, or incompletely polished branches. They must not overwrite the verified incumbent unless the new saved lower bound is strong enough relative to the old saved upper bound under the module's acceptance rule.
++Research scripts can keep neutral, temporarily worse, or incompletely polished branches.
++The tuner and distillation have strict rational incumbent-comparison policies with
++explicit tie/refinement cases. **The baseline `borsuk_search.py` instead selects the
++largest lower endpoint**, including its floating search score; it does not prove that
++new.lower > every previous.upper. With unresolved brackets, its directory name `best`
++is not a proved ordering of exact objectives. Do not silently change this policy during
++an unrelated refactor, and do not describe it as the stronger tuner guarantee. See
++[mathematics.md](mathematics.md#5-acceptance-policies-are-not-identical-across-workflows).
+ 
+ ## 3. `borsuk_search.py`: foundational finite-set engine
+ 
+@@ -145,7 +164,7 @@
+ 
+ Backend-specific parsing, timeouts, model validation, and status mapping belong here.
+ 
+-#### B. Exact logical evaluation of a floating point set
++#### B. Logical evaluation using floating-point distance ordering
+ 
+ `evaluate()` orders pair distances and searches for the transition between colorable and non-colorable threshold graphs. It returns an `Evaluation` bracket containing a lower bound, an upper bound, an UNSAT witness prefix, and an upper-bound coloring when available.
+ 
+@@ -298,7 +317,11 @@
+ 
+ ### Important current limitation
+ 
+-The present implementation is experiment-oriented and currently assumes the `k=4` setting in several places. Treat it as a prototype, not as a generic engine primitive.
++The implementation is experiment-oriented and assumes `k=4` in several places. It is
++not a generic engine primitive. Assembly adds an early rejection for a saved input
++explicitly declaring another k; raw arrays still assume k=4. The first-split family is
++enumerated before `--first-limit` slicing, so that option is not a total wall-time bound.
++Use the external bounded runner for exploratory calls.
+ 
+ ### Changes that belong here
+ 
+@@ -424,7 +447,7 @@
+ -2  invalid input or internal failure
+ ```
+ 
+-The implementation performs graph-level preprocessing such as low-degree peeling and uses DSATUR-style branching. It has no knowledge of Euclidean points, distances, witnesses, Borsuk ratios, or certificates.
++The current ABI limits are `0 <= n <= 10000` and `1 <= k <= 63` (the Python oracle requires positive n). The implementation performs graph-level preprocessing such as low-degree peeling and uses DSATUR-style branching. It has no knowledge of Euclidean points, distances, witnesses, Borsuk ratios, or certificates.
+ 
+ `borsuk_search.py` is responsible for loading the compiled shared library using a path resolved relative to the Python module, mapping return codes into `Status`, and validating any returned coloring.
+ 
+@@ -444,7 +467,7 @@
+ 
+ The test suite is not just regression coverage; it defines boundaries between heuristic research code and correctness-critical code.
+ 
+-A recommended root layout is:
++The consolidated test layout includes:
+ 
+ ```text
+ tests/
+@@ -452,12 +475,24 @@
+     test_early_stop.py
+     test_tune_solution.py
+     test_split_tune.py
+-    test_paired_splits.py        # or the current paired-replay regression tests
++    test_paired_replay.py
+     test_distillation.py
+     test_core_seed.py
++    test_structured_seed.py
++    test_surface_search.py
++    test_native_backend.py
++    test_workspace.py
++    test_experiment_runner.py
++    test_boundary_workspace.py
++    test_viewer_workspace.py
+ ```
+ 
+-The current generated experiment packages may use slightly different filenames, such as `test_paired_replay.py`. Consolidate them when building the local repository, but preserve the substance of the tests.
++Inherited tests were relocated and their fixture paths adjusted without replacing
++assertions. `scripts/run_tests.py` is the unified unittest entry point; it also supports
++focused suites and rejects zero-test discovery. `tests/README.md` maps those suites.
++`test_workspace.py` and `test_experiment_runner.py` own assembly/resource/provenance
++behavior rather than mathematical search. Native and viewer checks are explicit.
++Current execution results are in `validation/`, not inferred from historical test counts.
+ 
+ ### `test_borsuk_search.py`
+ 
+@@ -666,3 +701,31 @@
+ 5. historical experiment scripts and frozen reproduction bundles only as records of what was run.
+ 
+ A specialized script may intentionally be less generic than the lower layer. That is acceptable. What it must not do is weaken lower-layer correctness semantics.
++
++
++## 16. Repository tooling and data ownership
++
++`AGENTS.md` is the short entry map and invariant/compute policy. `.codex/config.toml`
++contains only conservative project permissions, no credentials or model pin. Setup,
++build and diagnostic commands live in `scripts/`; dependency installation is a human
++step separate from bounded agent tasks. Current Codex guidance is in `docs/codex.md`.
++
++`scripts/run_experiment.py` owns overall process timeouts, new output directory creation,
++command/input/source hashes, Git state and console logging. It does not evaluate R_k or
++choose a scientific incumbent. `configs/` holds explicit small-budget argv presets;
++change preset budgets there, not by altering core defaults. `scripts/smoke.py` owns two
++tiny integration searches and follow-up Python verification. Process budget outcomes
++remain distinct from graph-query UNKNOWN. `scripts/verify_examples.py` checks ordinary
++finite certificates; use surface/skeleton verifiers for their additional claims.
++
++`templates/` is versioned fitted geometry with matching source coordinates; `examples/`
++contains historical inputs/checkpoints and `tests/fixtures/` regression inputs. None
++is a scratch output directory. `DATA_MANIFEST.json` records their hashes. New scientific
++outputs belong in `experiments/`, whose contents are normally ignored by Git. A promoted
++example requires explicit review, provenance, and verification. `SOURCE_MANIFEST.json`
++records assembled-versus-imported source hashes; update this map when making a new release,
++not after every experiment.
++
++The assembled repository intentionally does not migrate the source to an installable
++Python package, generalize the paired splitter to k=5, add R4 distillation, or integrate
++a SAT proof checker. Those are separate tasks with their own tests and review.

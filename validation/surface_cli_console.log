@@ -1,0 +1,27 @@
+{"event": "initial", "elapsed_seconds": 0.005, "backend": "native", "points": 4, "lower": "0.707106781186547", "upper": "0.707106781186548", "squared_bounds_equal": true, "unknown": false, "hull": {"dimension": 2, "qhull_simplices": 4, "rejected_simplices": 0, "valid_simplices": 4, "exhaustive_3d_fallback": false, "all_retained_faces_exactly_supporting": true, "coverage_not_certified": true, "qualification": "Only boundary membership is used for lower bounds; this search does not certify a cover of the hull."}}
+{"event": "round_start", "elapsed_seconds": 0.006, "round": 1, "target": "0.707107781186548", "points": 4, "colorings": 2}
+{"event": "improvement", "elapsed_seconds": 0.012, "round": 1, "strict_over_initial": true, "points": 6, "lower": "0.790569415042094", "upper": "0.790569415042095", "squared_bounds_equal": true, "unknown": false}
+{"event": "round_end", "elapsed_seconds": 0.012, "round": 1, "added": 2, "threshold_status": "UNSAT", "points": 6, "lower": "0.790569415042094", "upper": "0.790569415042095", "squared_bounds_equal": true, "unknown": false, "proposal": {"pool": 16, "colorings": 2, "block_pool": 8, "known_colorings_blocked": 2, "cooperative_core_sizes": [], "list_csp_calls": 0, "maximum_sampled_blocking_margin_squared": 0.12499858578543754, "note": "Blocking one old coloring is a proposal screen, NOT a noncolorability certificate."}, "polish": {"attempted": false}}
+{
+  "version": "1.0",
+  "stop": "round_budget_exhausted",
+  "rounds_completed": 1,
+  "latest_points": 6,
+  "original_points": 4,
+  "latest": {
+    "points": 6,
+    "lower": "0.790569415042094",
+    "upper": "0.790569415042095",
+    "squared_bounds_equal": true,
+    "unknown": false
+  },
+  "best_lower": "0.790569415042094",
+  "best_upper": "0.790569415042095",
+  "initial_upper": "0.707106781186548",
+  "strict_improvement_over_initial": true,
+  "backend": "native",
+  "solver_calls": 2,
+  "unknown_calls": 0,
+  "elapsed_seconds": 0.013280981999969299,
+  "qualification": "Lower bounds apply to the hull; upper bounds apply ONLY to finite samples. Failure to improve is not an equality or optimality proof."
+}

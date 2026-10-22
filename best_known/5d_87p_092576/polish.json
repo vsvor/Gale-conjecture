@@ -1,0 +1,184 @@
+{
+  "status": "numerically_stationary",
+  "refreshes": [
+    {
+      "refresh": 1,
+      "status": "numerically_stationary",
+      "passes": [
+        {
+          "pass": 1,
+          "gain": 0.0,
+          "ratio": 0.925763634661861,
+          "successful_stagnant_passes": 1,
+          "runs": [
+            {
+              "success": true,
+              "status": 0,
+              "message": "Optimization terminated successfully",
+              "iterations": 1,
+              "full_constraint_violation": 0.0,
+              "feasible": true,
+              "diameter_constraints": 3741,
+              "missing_violated_constraints": 0,
+              "ftol": 1e-12
+            }
+          ],
+          "all_diameter_constraints_checked": true,
+          "terminal_success": true,
+          "terminal_matches_retained_ratio": true,
+          "retained_ratio": 0.925763634661861,
+          "audit": {
+            "success": true,
+            "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "active_tolerance": 1e-08,
+            "active_diameter_edges": 180,
+            "active_witness_edges": 224,
+            "linearized_gain": 0.0,
+            "scope": "numerical near-active first-order test for this fixed witness only"
+          }
+        },
+        {
+          "pass": 2,
+          "gain": 0.0,
+          "ratio": 0.925763634661861,
+          "successful_stagnant_passes": 2,
+          "runs": [
+            {
+              "success": true,
+              "status": 0,
+              "message": "Optimization terminated successfully",
+              "iterations": 1,
+              "full_constraint_violation": 0.0,
+              "feasible": true,
+              "diameter_constraints": 3741,
+              "missing_violated_constraints": 0,
+              "ftol": 1e-12
+            }
+          ],
+          "all_diameter_constraints_checked": true,
+          "terminal_success": true,
+          "terminal_matches_retained_ratio": true,
+          "retained_ratio": 0.925763634661861,
+          "audit": {
+            "success": true,
+            "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "active_tolerance": 1e-08,
+            "active_diameter_edges": 180,
+            "active_witness_edges": 224,
+            "linearized_gain": 0.0,
+            "scope": "numerical near-active first-order test for this fixed witness only"
+          },
+          "kick": {
+            "number": 1,
+            "ratio": 0.9257636346806193,
+            "runs": [
+              {
+                "success": true,
+                "status": 0,
+                "message": "Optimization terminated successfully",
+                "iterations": 34,
+                "full_constraint_violation": 2.55351295663786e-15,
+                "feasible": true,
+                "diameter_constraints": 3741,
+                "missing_violated_constraints": 0,
+                "ftol": 1e-12
+              }
+            ],
+            "all_diameter_constraints_checked": true,
+            "terminal_success": true,
+            "terminal_matches_retained_ratio": true,
+            "retained_ratio": 0.9257636346806192
+          }
+        },
+        {
+          "pass": 3,
+          "gain": 0.0,
+          "ratio": 0.9257636346806193,
+          "successful_stagnant_passes": 1,
+          "runs": [
+            {
+              "success": true,
+              "status": 0,
+              "message": "Optimization terminated successfully",
+              "iterations": 1,
+              "full_constraint_violation": 0.0,
+              "feasible": true,
+              "diameter_constraints": 3741,
+              "missing_violated_constraints": 0,
+              "ftol": 1e-12
+            }
+          ],
+          "all_diameter_constraints_checked": true,
+          "terminal_success": true,
+          "terminal_matches_retained_ratio": true,
+          "retained_ratio": 0.9257636346806192,
+          "audit": {
+            "success": true,
+            "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "active_tolerance": 1e-08,
+            "active_diameter_edges": 179,
+            "active_witness_edges": 221,
+            "linearized_gain": 1.1713941441914266e-15,
+            "scope": "numerical near-active first-order test for this fixed witness only"
+          }
+        },
+        {
+          "pass": 4,
+          "gain": 0.0,
+          "ratio": 0.9257636346806193,
+          "successful_stagnant_passes": 2,
+          "runs": [
+            {
+              "success": true,
+              "status": 0,
+              "message": "Optimization terminated successfully",
+              "iterations": 1,
+              "full_constraint_violation": 0.0,
+              "feasible": true,
+              "diameter_constraints": 3741,
+              "missing_violated_constraints": 0,
+              "ftol": 1e-12
+            }
+          ],
+          "all_diameter_constraints_checked": true,
+          "terminal_success": true,
+          "terminal_matches_retained_ratio": true,
+          "retained_ratio": 0.9257636346806192,
+          "audit": {
+            "success": true,
+            "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+            "active_tolerance": 1e-08,
+            "active_diameter_edges": 179,
+            "active_witness_edges": 221,
+            "linearized_gain": 1.1713941441914266e-15,
+            "scope": "numerical near-active first-order test for this fixed witness only"
+          }
+        }
+      ],
+      "kicks": 1,
+      "final_audit": {
+        "success": true,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "active_tolerance": 1e-08,
+        "active_diameter_edges": 179,
+        "active_witness_edges": 221,
+        "linearized_gain": 1.1713941441914266e-15,
+        "scope": "numerical near-active first-order test for this fixed witness only"
+      },
+      "ratio_tolerance": 1e-10,
+      "feasibility_tolerance": 1e-09,
+      "qualification": "Not a proof of local/global optimality or exhaustion of other witnesses.",
+      "full_ratio_lower": 0.9257636346806193,
+      "full_ratio_upper": 0.9257636346806193
+    }
+  ],
+  "saved_coordinate_audit": {
+    "success": true,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "active_tolerance": 1e-08,
+    "active_diameter_edges": 179,
+    "active_witness_edges": 221,
+    "linearized_gain": 0.0,
+    "scope": "numerical near-active first-order test for this fixed witness only"
+  }
+}

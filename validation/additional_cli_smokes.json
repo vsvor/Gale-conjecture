@@ -1,0 +1,26 @@
+[
+  {
+    "job": "split",
+    "returncode": 0,
+    "status": "completed",
+    "seconds": 1.1203352649999943
+  },
+  {
+    "job": "paired",
+    "returncode": 0,
+    "status": "completed",
+    "seconds": 1.1198509409998678
+  },
+  {
+    "job": "surface",
+    "returncode": 0,
+    "status": "completed",
+    "seconds": 1.0686589899999035
+  },
+  {
+    "job": "edge",
+    "returncode": 0,
+    "status": "completed",
+    "seconds": 1.0699925029998667
+  }
+]

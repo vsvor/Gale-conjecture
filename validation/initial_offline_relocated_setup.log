@@ -1,0 +1,4 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Requirement already satisfied: numpy<3,>=1.26 in /usr/lib/python3/dist-packages (from -r requirements.txt (line 3)) (2.2.4)
+ERROR: Could not find a version that satisfies the requirement scipy<2,>=1.12 (from versions: none)
+ERROR: No matching distribution found for scipy<2,>=1.12

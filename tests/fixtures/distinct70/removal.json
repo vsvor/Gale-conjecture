@@ -1,0 +1,19 @@
+{
+  "removed": [
+    67,
+    68,
+    69
+  ],
+  "ratio": 0.8878496018804399,
+  "delta": -5.551115123125783e-16,
+  "minimum_distance": 0.00039589264414165046,
+  "audit": {
+    "success": true,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "active_tolerance": 1e-08,
+    "active_diameter_edges": 119,
+    "active_witness_edges": 95,
+    "linearized_gain": 0.0,
+    "scope": "numerical near-active first-order test for this fixed witness only"
+  }
+}

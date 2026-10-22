@@ -1,0 +1,6 @@
+# Versions actually used for assembly validation on Linux x86_64, Python 3.13.5.
+# Not a cross-platform lock or a claim these wheels support every older Python.
+numpy==2.3.5
+scipy==1.17.0
+matplotlib==3.10.8
+Pillow==12.3.0

@@ -1,0 +1,26 @@
+{
+  "complete_skeleton_cover_verified": true,
+  "source_points": 49,
+  "hull_edges": 141,
+  "hull_facets": 94,
+  "colored_segments": 226,
+  "part_endpoint_counts": [
+    76,
+    66,
+    46,
+    31
+  ],
+  "lower_decimal": "0.886202597526444",
+  "upper_decimal": "0.886202597526446",
+  "lower_squared": [
+    "7853550438626178583568933884543481",
+    "10000000000000001190657682098769665"
+  ],
+  "upper_squared": [
+    "42477047157107883261533330454609782979150065897578565091191214581",
+    "54086425609737794237034485045835585160119938918135349894031867904"
+  ],
+  "source_witness_checked": true,
+  "qualification": "Upper bound covers the entire 1-skeleton, NOT the faces or solid hull. Lower bound additionally requires non-k-colorability of the source witness. Noncolorability is solver-checked, not independently proof-logged.",
+  "witness_backend": "python"
+}

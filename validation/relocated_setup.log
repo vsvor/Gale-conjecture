@@ -1,0 +1,38 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Requirement already satisfied: numpy<3,>=1.26 in /opt/pyvenv/lib/python3.13/site-packages (from -r requirements.txt (line 3)) (2.3.5)
+Requirement already satisfied: scipy<2,>=1.12 in /opt/pyvenv/lib/python3.13/site-packages (from -r requirements.txt (line 4)) (1.17.0)
+Requirement already satisfied: matplotlib<4,>=3.8 in /opt/pyvenv/lib/python3.13/site-packages (from -r requirements.txt (line 5)) (3.10.8)
+Requirement already satisfied: Pillow<13,>=10.2 in /opt/pyvenv/lib/python3.13/site-packages (from -r requirements.txt (line 6)) (12.3.0)
+Requirement already satisfied: contourpy>=1.0.1 in /opt/pyvenv/lib/python3.13/site-packages (from matplotlib<4,>=3.8->-r requirements.txt (line 5)) (1.3.3)
+Requirement already satisfied: cycler>=0.10 in /opt/pyvenv/lib/python3.13/site-packages (from matplotlib<4,>=3.8->-r requirements.txt (line 5)) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /opt/pyvenv/lib/python3.13/site-packages (from matplotlib<4,>=3.8->-r requirements.txt (line 5)) (4.63.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /opt/pyvenv/lib/python3.13/site-packages (from matplotlib<4,>=3.8->-r requirements.txt (line 5)) (1.5.0)
+Requirement already satisfied: packaging>=20.0 in /opt/pyvenv/lib/python3.13/site-packages (from matplotlib<4,>=3.8->-r requirements.txt (line 5)) (25.0)
+Requirement already satisfied: pyparsing>=3 in /opt/pyvenv/lib/python3.13/site-packages (from matplotlib<4,>=3.8->-r requirements.txt (line 5)) (3.3.2)
+Requirement already satisfied: python-dateutil>=2.7 in /opt/pyvenv/lib/python3.13/site-packages (from matplotlib<4,>=3.8->-r requirements.txt (line 5)) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in /opt/pyvenv/lib/python3.13/site-packages (from python-dateutil>=2.7->matplotlib<4,>=3.8->-r requirements.txt (line 5)) (1.17.0)
+c++ -O3 -std=c++17 -shared -fPIC /mnt/data/_relocated_workspace/borsuk_project/dsatur_native.cpp -o /mnt/data/_relocated_workspace/borsuk_project/.native-build-_qazr6z4/dsatur_native.so
+Built /mnt/data/_relocated_workspace/borsuk_project/dsatur_native.so. Restart Python processes that had already loaded an older library.
+{
+  "python": "3.13.5 (main, Jun 25 2025, 18:55:22) [GCC 14.2.0]",
+  "executable": "/mnt/data/_relocated_workspace/borsuk_project/.venv/bin/python",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "repository": "/mnt/data/_relocated_workspace/borsuk_project",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "Pillow": "12.3.0"
+  },
+  "codex_path": null,
+  "compiler": "/usr/bin/c++",
+  "issues": [],
+  "native": {
+    "present": true,
+    "validated": true
+  },
+  "ready": true
+}
+
+Next: source .venv/bin/activate
+Then: python scripts/run_tests.py --suite all

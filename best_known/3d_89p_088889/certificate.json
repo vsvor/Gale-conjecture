@@ -1,0 +1,46 @@
+{
+  "version": "tuner-1.0",
+  "dimension": 3,
+  "m": 89,
+  "k": 4,
+  "floating_lower": 0.8888923464654452,
+  "floating_upper": 0.8888923464654452,
+  "threshold_resolved": true,
+  "coordinate_decimal_digits": 17,
+  "duplicate_rows_separated_by_1e_minus_17": 0,
+  "witness_edges": 1455,
+  "geometry": {
+    "lower_decimal": "0.888892346465",
+    "upper_decimal": "0.888892346466",
+    "bound_decimal_digits": 12,
+    "diameter_squared_integer": "10000000000000001768183441369476061",
+    "min_witness_squared_integer": "7901296036048453246881553750182450",
+    "max_part_squared_integer": "7901296036048453246881553750182450",
+    "distinct_points": 89
+  },
+  "run": {
+    "k": 4,
+    "generation": 2,
+    "original_point_count": 81,
+    "stage": "optimized",
+    "version": "1.0",
+    "protected_exceptions": [
+      9,
+      12,
+      16,
+      44,
+      50,
+      51,
+      52,
+      53,
+      54,
+      56
+    ],
+    "coordinates_sha256": "6be83998b22a62b1347abc003edb7c8a93b34b8e574bacd536930ca42f857ccd",
+    "rows_never_reordered_or_deleted": true,
+    "parent": "/mnt/data/distillation_work/reproduction_current/generations/0002/p00_c02/seed",
+    "seed": 3918421120,
+    "control": true
+  },
+  "qualification": "Geometry and comparisons use integer arithmetic. Graph UNSAT results are not independently proof-logged. SLSQP/LP reports are numerical fixed-graph diagnostics, not optimality proofs."
+}

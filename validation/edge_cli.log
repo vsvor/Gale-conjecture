@@ -1,0 +1,37 @@
+{
+  "cwd": "/mnt/data/borsuk_project",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "edge_search.py",
+    "search",
+    "examples/d3_m23",
+    "--mode",
+    "uniform",
+    "--levels",
+    "1",
+    "--cover-iters",
+    "2",
+    "--cover-seconds",
+    "2",
+    "--eval-checks",
+    "6",
+    "--backend",
+    "native",
+    "--sat-timeout",
+    "2",
+    "--out",
+    "/mnt/data/borsuk_project/experiments/assembly-edge/result"
+  ],
+  "timeout_seconds": 60.0,
+  "inputs": {},
+  "output": "/mnt/data/borsuk_project/experiments/assembly-edge"
+}
+Console output is recorded in /mnt/data/borsuk_project/experiments/assembly-edge/console.log
+{
+  "status": "completed",
+  "exit_code": 0,
+  "elapsed_seconds": 1.0699925029998667,
+  "run": "/mnt/data/borsuk_project/experiments/assembly-edge",
+  "source_changed_during_run": false
+}
+

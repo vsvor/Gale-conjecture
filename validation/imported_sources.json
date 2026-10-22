@@ -1,0 +1,655 @@
+{
+  "scope": "Imported conversation artifacts; paths identify package names, not live upstream URLs.",
+  "files": [
+    {
+      "path": "borsuk_search.py",
+      "source": "archive:borsuk_early_stop/borsuk_search.py",
+      "source_sha256": "17358a255df72c95f8f7f3e76e0b90e63e6e083330e71e11aab24582bf96fac7"
+    },
+    {
+      "path": "dsatur_native.cpp",
+      "source": "archive:borsuk_early_stop/dsatur_native.cpp",
+      "source_sha256": "58acbc8089b10bed49891b1540b866d714611980aa2d1aee8aaf25f9a35f41da"
+    },
+    {
+      "path": "tune_solution.py",
+      "source": "archive:borsuk_tuner/tune_solution.py",
+      "source_sha256": "5a3879bb06169a32a759d5c03b4683f12b0b859f51995aa45b5fc91f78f0a748"
+    },
+    {
+      "path": "split_tune.py",
+      "source": "archive:vertex_split_tuner/split_tune.py",
+      "source_sha256": "679f7591ac66f84c37f0b2be8b31431601a82e32d3041651d8940587b22ed677"
+    },
+    {
+      "path": "paired_splits.py",
+      "source": "archive:tuning73_report/paired_splits.py",
+      "source_sha256": "e27be22fb8df949638d7673351fca53072a366dc7bae8b0754fec516f64ef450"
+    },
+    {
+      "path": "replay_pair73.py",
+      "source": "archive:tuning73_report/replay_pair73.py",
+      "source_sha256": "a7eb3bfdbd1eb052354e565b930f6394a8f8f7dabfec19c414131b404dc6c3a8"
+    },
+    {
+      "path": "distill_search.py",
+      "source": "archive:distillation_cycle/distill_search.py",
+      "source_sha256": "7c5baf2bf8441650d1b15fc472588a29e09164d5d722676e4e0019b69fa786a0"
+    },
+    {
+      "path": "curve_model.py",
+      "source": "archive:distillation_cycle/curve_model.py",
+      "source_sha256": "81d1105396218e36e924612f24e6164c4ee2a2767b23832fabebe133af2a14dc"
+    },
+    {
+      "path": "core_seed.py",
+      "source": "archive:core_aware_generator/core_seed.py",
+      "source_sha256": "9046c332c5c66a654243d301dbfd2fdeda248fdc4d045928f08c5d92f45f30bb"
+    },
+    {
+      "path": "structured_seed.py",
+      "source": "archive:core_aware_generator/structured_seed.py",
+      "source_sha256": "f2016866649b6da49779c206a37e96f8414ba6e428ba58cd812ac677fb3f9a82"
+    },
+    {
+      "path": "compare_curves.py",
+      "source": "archive:curve_distillation81/compare_curves.py",
+      "source_sha256": "4af1ff2e2e36ff339300aa8be8e1cae7a0a15fc59971e353a1663d0bd0a49638"
+    },
+    {
+      "path": "view_solution.py",
+      "source": "archive:distillation_cycle/view_solution.py",
+      "source_sha256": "7ec0020bc6b815468e83b907c4a7a537738f3abf131311f2baad557ace02e01a"
+    },
+    {
+      "path": "surface_search.py",
+      "source": "archive:hull_surface_search/surface_search.py",
+      "source_sha256": "5f3fb113a2233d3f8977a77d9e667e3f7b7c8bd08bd1d1de215c333e89c4c464"
+    },
+    {
+      "path": "edge_search.py",
+      "source": "attachment:edge_skeleton_search/edge_search.py",
+      "source_sha256": "09d023d6a73601196bb4111eefed6014fe63f522ceefe42e300d8ace18387f2e"
+    },
+    {
+      "path": "verify_skeleton.py",
+      "source": "attachment:edge_skeleton_search/verify_skeleton.py",
+      "source_sha256": "af69ccd7a4c9607df3e5966a1fc4cd434534a76b41cd58bcb0826f06f9135f2b"
+    },
+    {
+      "path": "tests/test_borsuk_search.py",
+      "source": "archive:borsuk_early_stop/test_borsuk_search.py",
+      "source_sha256": "6eed4daaa75384c5fad5613c9b524441716ab152cd0a81095b5e1dc642707a24"
+    },
+    {
+      "path": "tests/test_early_stop.py",
+      "source": "archive:borsuk_early_stop/test_early_stop.py",
+      "source_sha256": "aaef4c82b0a3e2592e160833395d51d29d12b283c4d246eb8325b96c09241861"
+    },
+    {
+      "path": "tests/test_tune_solution.py",
+      "source": "archive:vertex_split_tuner/test_tune_solution.py",
+      "source_sha256": "d4b6b01626f517e07a350ebd079d36a0bee434a9a224aae865923d66e51bdc59"
+    },
+    {
+      "path": "tests/test_split_tune.py",
+      "source": "archive:vertex_split_tuner/test_split_tune.py",
+      "source_sha256": "42cc0ef377a9329489436196708844852ad9d3b885bb3632258f71f411a4e9c1"
+    },
+    {
+      "path": "tests/test_paired_replay.py",
+      "source": "archive:tuning73_report/test_paired_replay.py",
+      "source_sha256": "950b75e1f1c74be7896b0abdade5e701bd15ba6d39d358cd79bace91aa6e8346"
+    },
+    {
+      "path": "tests/test_distillation.py",
+      "source": "archive:distillation_cycle/test_distillation.py",
+      "source_sha256": "e17ac647958d4f40622af607dfd57efeaa729df92aebb513379970908ff9a8f0"
+    },
+    {
+      "path": "tests/test_core_seed.py",
+      "source": "archive:core_aware_generator/test_core_seed.py",
+      "source_sha256": "8f71a78b96839d73a27170c560aa0f5592aa4fef3a3914756ab8a29d859acfd8"
+    },
+    {
+      "path": "tests/test_surface_search.py",
+      "source": "archive:hull_surface_search/test_surface_search.py",
+      "source_sha256": "0a0938902c7782d82c847999c409c7e8c542532e8c9d0a0f102303244d221af4"
+    },
+    {
+      "path": "tests/test_structured_seed.py",
+      "source": "archive:curve_distillation81/test_structured_seed.py",
+      "source_sha256": "acf22e08cb73838e2dd07d2d485abb4510ac35a535da4026d3e55573c4566cc4"
+    },
+    {
+      "path": "templates/curves3.json",
+      "source": "archive:core_aware_generator/templates/curves3.json",
+      "source_sha256": "819bc9269cfd3b14e7bdb5bc4d782da0cfee21f43b44cf792fc0984d6ec7bd60"
+    },
+    {
+      "path": "templates/curves3_comparison.json",
+      "source": "archive:core_aware_generator/templates/curves3_comparison.json",
+      "source_sha256": "7694d8794f1a537ea6a300b97991136fae79b6847d7be63599bbaa91c58f24c7"
+    },
+    {
+      "path": "templates/patches4.json",
+      "source": "archive:core_aware_generator/templates/patches4.json",
+      "source_sha256": "420357912441a6570a04e96c636b0e9e5ad76cc29294f05f17b317253c017a5a"
+    },
+    {
+      "path": "templates/source3.npy",
+      "source": "archive:core_aware_generator/templates/source3.npy",
+      "source_sha256": "ab19688c55527f5a78e4d582ac0a2c21d296bc214689a6ede1e2c2fd50857445"
+    },
+    {
+      "path": "templates/source4.csv",
+      "source": "archive:core_aware_generator/templates/source4.csv",
+      "source_sha256": "dcfe607d0eaf2dc50f0bc80f8d76295a62aee27cb6918fab04ecc4afd32026e6"
+    },
+    {
+      "path": "templates/circle.json",
+      "source": "archive:distillation_cycle/templates/circle.json",
+      "source_sha256": "d2d744cd9437ee97d1e6f000047fafab509a32dfdefac105e71287f5325065fd"
+    },
+    {
+      "path": "templates/groups81.json",
+      "source": "archive:distillation_cycle/templates/groups81.json",
+      "source_sha256": "6b55999d131546e0b1df5e6901b204da26c8bcabed838adefe3261872a2cfa17"
+    },
+    {
+      "path": "templates/parabola.json",
+      "source": "archive:distillation_cycle/templates/parabola.json",
+      "source_sha256": "c61bc1771586476bba1a8e11ccc2026de259969296e78f2c6859388d031b8b5e"
+    },
+    {
+      "path": "examples/d3_m23/certificate.json",
+      "source": "archive:borsuk_early_stop/examples/d3_m23/certificate.json",
+      "source_sha256": "d462238146a33d3cc0fff0815c8cf8662036a907ba6815c1dc76b4ea58514c26"
+    },
+    {
+      "path": "examples/d3_m23/partition.json",
+      "source": "archive:borsuk_early_stop/examples/d3_m23/partition.json",
+      "source_sha256": "57a23d7b00f58a3926f9ad5217db0b227c9d4a9bc00f3ead9c898a8db4e73395"
+    },
+    {
+      "path": "examples/d3_m23/points.csv",
+      "source": "archive:borsuk_early_stop/examples/d3_m23/points.csv",
+      "source_sha256": "c7d4e44f8ad2c89578219707ef4f676891cec37411fb59dde35f81352e0fe1e1"
+    },
+    {
+      "path": "examples/d3_m23/points.npy",
+      "source": "archive:borsuk_early_stop/examples/d3_m23/points.npy",
+      "source_sha256": "6082a73658731e80df6c1189959253ba9ea3e18a527c76b6cbd28e9b5b14486f"
+    },
+    {
+      "path": "examples/d3_m23/witness.cnf",
+      "source": "archive:borsuk_early_stop/examples/d3_m23/witness.cnf",
+      "source_sha256": "a7c10b6e4d2ed27a8a3ce058712f108d27b2e07d59a2ff5c7183835d8a342304"
+    },
+    {
+      "path": "examples/d3_m23/witness_edges.csv",
+      "source": "archive:borsuk_early_stop/examples/d3_m23/witness_edges.csv",
+      "source_sha256": "23db68e10b5cab4b8f91a08166c62d81e21affa08e69e865b57efbb54f2c1c8b"
+    },
+    {
+      "path": "examples/d3_m49/certificate.json",
+      "source": "archive:borsuk_early_stop/examples/d3_m49/certificate.json",
+      "source_sha256": "965051947ddce0764cf185ae048b64e68d13ece14026583b96ec554be1968d75"
+    },
+    {
+      "path": "examples/d3_m49/partition.json",
+      "source": "archive:borsuk_early_stop/examples/d3_m49/partition.json",
+      "source_sha256": "49c7f2e96fa605c9425c87a1b74bd1a68ef5d265b33f2532b7442108464f7439"
+    },
+    {
+      "path": "examples/d3_m49/points.csv",
+      "source": "archive:borsuk_early_stop/examples/d3_m49/points.csv",
+      "source_sha256": "d6b5e1d5b41b94e443564b3f2f51e9a44c01909e83dacedf954f03690d3785f9"
+    },
+    {
+      "path": "examples/d3_m49/points.npy",
+      "source": "archive:borsuk_early_stop/examples/d3_m49/points.npy",
+      "source_sha256": "010dd8cca0010710a51d201d39468c473fa7fcd1c3fea77d87b2c8d742748523"
+    },
+    {
+      "path": "examples/d3_m49/witness.cnf",
+      "source": "archive:borsuk_early_stop/examples/d3_m49/witness.cnf",
+      "source_sha256": "f1802d9f53af147538a0d900d2c637018ae5fd028d64e436b98789d18655da91"
+    },
+    {
+      "path": "examples/d3_m49/witness_edges.csv",
+      "source": "archive:borsuk_early_stop/examples/d3_m49/witness_edges.csv",
+      "source_sha256": "8d779ebe8c27ad35b7fd2b92bda7ebccfe961dcd8e6295ca73c4d1b7b5934087"
+    },
+    {
+      "path": "examples/d4_m32/certificate.json",
+      "source": "archive:borsuk_early_stop/examples/d4_m32/certificate.json",
+      "source_sha256": "0e2ad4eb531d0ff116feef10f700994fb8b12c2193e9a2293eb45194c5f3ffe1"
+    },
+    {
+      "path": "examples/d4_m32/partition.json",
+      "source": "archive:borsuk_early_stop/examples/d4_m32/partition.json",
+      "source_sha256": "fb3f9591453c0eced7144ec47047033b40e7cc2cbe1ff9cd11a1cbc971757852"
+    },
+    {
+      "path": "examples/d4_m32/points.csv",
+      "source": "archive:borsuk_early_stop/examples/d4_m32/points.csv",
+      "source_sha256": "0df3bac3a4fffd13ff178bc1f6cec13b235b29c6a6a3a031ba157b81ef4b1b92"
+    },
+    {
+      "path": "examples/d4_m32/points.npy",
+      "source": "archive:borsuk_early_stop/examples/d4_m32/points.npy",
+      "source_sha256": "4c51b360dd4187763e05517a553373f65fffd0cde36e40a6a03aaa58ebd24aca"
+    },
+    {
+      "path": "examples/d4_m32/witness.cnf",
+      "source": "archive:borsuk_early_stop/examples/d4_m32/witness.cnf",
+      "source_sha256": "935233c110ff62b2679d540d73b85055fd770eb9e6aafd236b8eba2d1c9c969f"
+    },
+    {
+      "path": "examples/d4_m32/witness_edges.csv",
+      "source": "archive:borsuk_early_stop/examples/d4_m32/witness_edges.csv",
+      "source_sha256": "c4eda5c54f17a024addc4dd3f8b0d51a80cf5b7c9f16e930d197199cca06bfd6"
+    },
+    {
+      "path": "examples/d5_m32/certificate.json",
+      "source": "archive:borsuk_early_stop/examples/d5_m32/certificate.json",
+      "source_sha256": "0e40e02b8760e637a85defa46a2071726f976eab6231c882c71b0f0158c250ad"
+    },
+    {
+      "path": "examples/d5_m32/partition.json",
+      "source": "archive:borsuk_early_stop/examples/d5_m32/partition.json",
+      "source_sha256": "221800bc82d273d07fedaf0127965060d16b461121575ec5331809ea2c302cd1"
+    },
+    {
+      "path": "examples/d5_m32/points.csv",
+      "source": "archive:borsuk_early_stop/examples/d5_m32/points.csv",
+      "source_sha256": "953cf075be95bc5a72f15d56d028b24a2487572f03670c768342ffe12aed379d"
+    },
+    {
+      "path": "examples/d5_m32/points.npy",
+      "source": "archive:borsuk_early_stop/examples/d5_m32/points.npy",
+      "source_sha256": "14b00fec97e6b9ef195d06a9248b2d924b3bb97554a11876d8433501558b0d22"
+    },
+    {
+      "path": "examples/d5_m32/witness.cnf",
+      "source": "archive:borsuk_early_stop/examples/d5_m32/witness.cnf",
+      "source_sha256": "16607d96bdc343c17fe96c808291110bdd9bf4dc6793d0a8109b151f3b64e62a"
+    },
+    {
+      "path": "examples/d5_m32/witness_edges.csv",
+      "source": "archive:borsuk_early_stop/examples/d5_m32/witness_edges.csv",
+      "source_sha256": "871374b8089db52de8e725221e788a0d7f71100a40a29305036a3e32fc6a8583"
+    },
+    {
+      "path": "examples/d3_m46/certificate.json",
+      "source": "archive:vertex_split_tuner/examples/d3_m46/certificate.json",
+      "source_sha256": "5385db20eb29afccba0dea0b7c82e8aa58ec75a7745dc40ce1a2cfb00aef0922"
+    },
+    {
+      "path": "examples/d3_m46/partition.json",
+      "source": "archive:vertex_split_tuner/examples/d3_m46/partition.json",
+      "source_sha256": "408dcd6b00b37d1a796be60a1def0a6d41adec9df289b6d59e3c45249cefdcb8"
+    },
+    {
+      "path": "examples/d3_m46/points.csv",
+      "source": "archive:vertex_split_tuner/examples/d3_m46/points.csv",
+      "source_sha256": "f26bdb9caddb9d4686b521ca2d852ded4dbd29c9d4c6f2a305d74577b3e04d03"
+    },
+    {
+      "path": "examples/d3_m46/points.npy",
+      "source": "archive:vertex_split_tuner/examples/d3_m46/points.npy",
+      "source_sha256": "a74d60900eb65c0c2e894628cfa7f56c245e42f7edfd2c6c8edf6f9214a829eb"
+    },
+    {
+      "path": "examples/d3_m46/polish.json",
+      "source": "archive:vertex_split_tuner/examples/d3_m46/polish.json",
+      "source_sha256": "57271e230ad17575dd37466cb9fac6e7d66c24bddcd81d90f478235997e67724"
+    },
+    {
+      "path": "examples/d3_m46/witness.cnf",
+      "source": "archive:vertex_split_tuner/examples/d3_m46/witness.cnf",
+      "source_sha256": "e3ac3808743f5f9fb7184f531e5dcb0afb7661bb551deeb2cc3b305554c190f8"
+    },
+    {
+      "path": "examples/d3_m46/witness_edges.csv",
+      "source": "archive:vertex_split_tuner/examples/d3_m46/witness_edges.csv",
+      "source_sha256": "1ef233c54b091b08b508165999181914ea1d69e9c00932b3990bcfb40fb88c8b"
+    },
+    {
+      "path": "examples/record81/best_model.json",
+      "source": "archive:distillation_cycle/examples/record81/best_model.json",
+      "source_sha256": "819bc9269cfd3b14e7bdb5bc4d782da0cfee21f43b44cf792fc0984d6ec7bd60"
+    },
+    {
+      "path": "examples/record81/certificate.json",
+      "source": "archive:distillation_cycle/examples/record81/certificate.json",
+      "source_sha256": "7e126853ebe35f5faaf308265ff1060a6297b869adb52bd62e4605eb5cccb4b9"
+    },
+    {
+      "path": "examples/record81/partition.json",
+      "source": "archive:distillation_cycle/examples/record81/partition.json",
+      "source_sha256": "79841470cc110729d108b5c7433cf2ed8d1e54c848bc3c66160e94b48cc1346a"
+    },
+    {
+      "path": "examples/record81/points.csv",
+      "source": "archive:distillation_cycle/examples/record81/points.csv",
+      "source_sha256": "0d28c4670c63633362008724601e069642551eb9a2a69702268da1d0e25cfe1d"
+    },
+    {
+      "path": "examples/record81/points.npy",
+      "source": "archive:distillation_cycle/examples/record81/points.npy",
+      "source_sha256": "ab19688c55527f5a78e4d582ac0a2c21d296bc214689a6ede1e2c2fd50857445"
+    },
+    {
+      "path": "examples/record81/witness.cnf",
+      "source": "archive:distillation_cycle/examples/record81/witness.cnf",
+      "source_sha256": "9ad478fa5fd63f4d3660f798b961fac253095354edc7de74da1f6df70e2bb7ce"
+    },
+    {
+      "path": "examples/record81/witness_edges.csv",
+      "source": "archive:distillation_cycle/examples/record81/witness_edges.csv",
+      "source_sha256": "e7897619f09536a3161d01cb2d9b4e5e172bee1276042a69ee68a0dabeca56bc"
+    },
+    {
+      "path": "examples/distilled89/certificate.json",
+      "source": "archive:distillation_cycle/best89/certificate.json",
+      "source_sha256": "dbe644e7737b6e40d7ccd9873e4f3c7de0dd3a15d7456eee6e28e8df476444e9"
+    },
+    {
+      "path": "examples/distilled89/fit.json",
+      "source": "archive:distillation_cycle/best89/fit.json",
+      "source_sha256": "5bffd3e5079aa4c4ef54a05dddfd8558c5fbf29e78030ffd0f093c2eceb0d025"
+    },
+    {
+      "path": "examples/distilled89/geometry_diagnostics.json",
+      "source": "archive:distillation_cycle/best89/geometry_diagnostics.json",
+      "source_sha256": "4b15f63eb03c22fb57638663cec7f17781dc4d93852327dc96cba6c66fe6b064"
+    },
+    {
+      "path": "examples/distilled89/lineage.json",
+      "source": "archive:distillation_cycle/best89/lineage.json",
+      "source_sha256": "0a198bf3d0be42f1a0b470f2920bdcfda81de61f49ceae4d02162cbd1b026155"
+    },
+    {
+      "path": "examples/distilled89/model.json",
+      "source": "archive:distillation_cycle/best89/model.json",
+      "source_sha256": "e07748b52e2d7f103f2fb25058b2199522e2947c92c38659ecda2f7acd44d13e"
+    },
+    {
+      "path": "examples/distilled89/partition.json",
+      "source": "archive:distillation_cycle/best89/partition.json",
+      "source_sha256": "c2b5a6ec29cc51007885c9f4f1b93ba2bd6d9d07803d9e2e9a43eb0e9a7fdff1"
+    },
+    {
+      "path": "examples/distilled89/points.csv",
+      "source": "archive:distillation_cycle/best89/points.csv",
+      "source_sha256": "2693e193179400af6d6afc9fee7e684a4f274d9723b1de8ad3cb8268c4b9b8da"
+    },
+    {
+      "path": "examples/distilled89/points.npy",
+      "source": "archive:distillation_cycle/best89/points.npy",
+      "source_sha256": "68547548c763519c13f23b1c6b5410f937d8f8ec41f2fcb97ef739adec7fb7d2"
+    },
+    {
+      "path": "examples/distilled89/polish.json",
+      "source": "archive:distillation_cycle/best89/polish.json",
+      "source_sha256": "54e7082b5325502d07cf2189540509c614242bb3df5079b160e68258c5c7eeb7"
+    },
+    {
+      "path": "examples/distilled89/witness.cnf",
+      "source": "archive:distillation_cycle/best89/witness.cnf",
+      "source_sha256": "e2e1dcd080a0a7c8a08b120976717c679a96b8bc3a61794ded11abae93fa6f19"
+    },
+    {
+      "path": "examples/distilled89/witness_edges.csv",
+      "source": "archive:distillation_cycle/best89/witness_edges.csv",
+      "source_sha256": "bdf47362ac75cc1cf60e9c14a1dd65afa1fadf9f299d5c1067049699eee85923"
+    },
+    {
+      "path": "examples/distilled89/worker.json",
+      "source": "archive:distillation_cycle/best89/worker.json",
+      "source_sha256": "fc8eb2abf0e44f438a465ff7b9feaa20cde06e5c5ec602a7ee10236869f31f7b"
+    },
+    {
+      "path": "examples/record58/certificate.json",
+      "source": "archive:hull_surface_search/examples/record58/certificate.json",
+      "source_sha256": "52bff3fe868bccc8bdd0a66c77dbc94c2d219922cd05b4aa2e9b0e147fcc33aa"
+    },
+    {
+      "path": "examples/record58/partition.json",
+      "source": "archive:hull_surface_search/examples/record58/partition.json",
+      "source_sha256": "5d520ac80ba7509a64fda18f3cbdac9cfe1d6576a768d6342154d2d747c1d049"
+    },
+    {
+      "path": "examples/record58/points.csv",
+      "source": "archive:hull_surface_search/examples/record58/points.csv",
+      "source_sha256": "ac8e19cb9999bcb7d0891f88ee3c4f80bee3629d1637d9cb7d9945e0c2bfe3c9"
+    },
+    {
+      "path": "examples/record58/witness.cnf",
+      "source": "archive:hull_surface_search/examples/record58/witness.cnf",
+      "source_sha256": "144f2cec5857a4f95354799d1adede74cfe3f142c8ae189d2d1e468c6c811bc6"
+    },
+    {
+      "path": "examples/record58/witness_edges.csv",
+      "source": "archive:hull_surface_search/examples/record58/witness_edges.csv",
+      "source_sha256": "59ff63b998b2cf8ba88773e110dd7fbc62a4c6b6c8a4ff54d545b7b539ddbae8"
+    },
+    {
+      "path": "examples/record58_370/certificate.json",
+      "source": "archive:hull_surface_search/examples/record58_370/certificate.json",
+      "source_sha256": "1baee5d811b5fb8e6ce4da69bb0d69c4624505f29b985d30439a3ce0a089d431"
+    },
+    {
+      "path": "examples/record58_370/partition.json",
+      "source": "archive:hull_surface_search/examples/record58_370/partition.json",
+      "source_sha256": "2884acb87a35cd90ec6fac77e237a92d40c8909d21e4a2447e8e6d4b9266e22b"
+    },
+    {
+      "path": "examples/record58_370/points.csv",
+      "source": "archive:hull_surface_search/examples/record58_370/points.csv",
+      "source_sha256": "000fe6f3d9bbf86f7bd4b10d1339345fa6548dbde7804972b6765439860e25f2"
+    },
+    {
+      "path": "examples/record58_370/points.npy",
+      "source": "archive:hull_surface_search/examples/record58_370/points.npy",
+      "source_sha256": "d261c915f24d0cfad1fb3718e6184c44e53a739eb3e655aa143b02fee6d37209"
+    },
+    {
+      "path": "examples/record58_370/source_points.csv",
+      "source": "archive:hull_surface_search/examples/record58_370/source_points.csv",
+      "source_sha256": "ac8e19cb9999bcb7d0891f88ee3c4f80bee3629d1637d9cb7d9945e0c2bfe3c9"
+    },
+    {
+      "path": "examples/record58_370/surface.json",
+      "source": "archive:hull_surface_search/examples/record58_370/surface.json",
+      "source_sha256": "b89384602286d904091dca61c0bb428d666c1bbfd7ad938efe4baad810a98a61"
+    },
+    {
+      "path": "examples/record58_370/witness.cnf",
+      "source": "archive:hull_surface_search/examples/record58_370/witness.cnf",
+      "source_sha256": "5163eb30325d254d2490f5174a3910c9f04c0eb188ef14edfcd5e42a69bc2b91"
+    },
+    {
+      "path": "examples/record58_370/witness_edges.csv",
+      "source": "archive:hull_surface_search/examples/record58_370/witness_edges.csv",
+      "source_sha256": "3bc41e0a91328f8b62b5257b8e79c32cb91665118ee07a0bb6177d899ccd39e3"
+    },
+    {
+      "path": "examples/square/points.csv",
+      "source": "archive:hull_surface_search/examples/square/points.csv",
+      "source_sha256": "8586f9e87c3d2307d1b9cc5b42a5d67d0230e842dfd5180137f584fb79c7e64b"
+    },
+    {
+      "path": "examples/square_improved/certificate.json",
+      "source": "archive:hull_surface_search/examples/square_improved/certificate.json",
+      "source_sha256": "7984061f63e86960866eead18409ee055d4af62598de23b8128d4a7e0711b207"
+    },
+    {
+      "path": "examples/square_improved/partition.json",
+      "source": "archive:hull_surface_search/examples/square_improved/partition.json",
+      "source_sha256": "61190ce6ce9e107cd25b4e186aa1ac9dc5dd1d68f374ea43a5752e87e90fa2c7"
+    },
+    {
+      "path": "examples/square_improved/points.csv",
+      "source": "archive:hull_surface_search/examples/square_improved/points.csv",
+      "source_sha256": "5b8552bb29a77744be464304194e50e99d676617c04246b843e318e3e2f59ec8"
+    },
+    {
+      "path": "examples/square_improved/points.npy",
+      "source": "archive:hull_surface_search/examples/square_improved/points.npy",
+      "source_sha256": "47a5911c8cf2a5af0d4ee86eaeb421c3f54e6d0d21c5dd23fa18dbf772a82e2b"
+    },
+    {
+      "path": "examples/square_improved/source_points.csv",
+      "source": "archive:hull_surface_search/examples/square_improved/source_points.csv",
+      "source_sha256": "8586f9e87c3d2307d1b9cc5b42a5d67d0230e842dfd5180137f584fb79c7e64b"
+    },
+    {
+      "path": "examples/square_improved/surface.json",
+      "source": "archive:hull_surface_search/examples/square_improved/surface.json",
+      "source_sha256": "c39bfe97989ef215e4251d155853da15197305c93f1dfeb26947a1ee66be76f0"
+    },
+    {
+      "path": "examples/square_improved/witness.cnf",
+      "source": "archive:hull_surface_search/examples/square_improved/witness.cnf",
+      "source_sha256": "f716d24d2326ea73d7ad7420604f9b1221b2d8c718fb6e403d3e60e8378ba208"
+    },
+    {
+      "path": "examples/square_improved/witness_edges.csv",
+      "source": "archive:hull_surface_search/examples/square_improved/witness_edges.csv",
+      "source_sha256": "164a91ce386954c784119bb8845033fba259bb847333a4533555526bae3d4596"
+    },
+    {
+      "path": "tests/fixtures/distinct70/certificate.json",
+      "source": "archive:tuning73_report/distinct70/certificate.json",
+      "source_sha256": "fc9be0639db040bd17e58752df5214e2405466c471f6c28571bd0c8f5db4f718"
+    },
+    {
+      "path": "tests/fixtures/distinct70/partition.json",
+      "source": "archive:tuning73_report/distinct70/partition.json",
+      "source_sha256": "93075af6c9142711d6dc689086d7a34b327e7a6bf478ee7b60693ea5e82b1ce8"
+    },
+    {
+      "path": "tests/fixtures/distinct70/points.csv",
+      "source": "archive:tuning73_report/distinct70/points.csv",
+      "source_sha256": "af0d24ea9614e90465e0da139366960b206c9301488aa820902ea0f8dad2e1e9"
+    },
+    {
+      "path": "tests/fixtures/distinct70/points.npy",
+      "source": "archive:tuning73_report/distinct70/points.npy",
+      "source_sha256": "a9d7ff9cad937472031f5c1fa14adc3e3c12c2d9206538e45256256733303109"
+    },
+    {
+      "path": "tests/fixtures/distinct70/polish.json",
+      "source": "archive:tuning73_report/distinct70/polish.json",
+      "source_sha256": "57271e230ad17575dd37466cb9fac6e7d66c24bddcd81d90f478235997e67724"
+    },
+    {
+      "path": "tests/fixtures/distinct70/removal.json",
+      "source": "archive:tuning73_report/distinct70/removal.json",
+      "source_sha256": "ddc5bd98f37b68ad3aee1c3e4f7eea8a50cd869cf003540bdc41b7e1877b9d12"
+    },
+    {
+      "path": "tests/fixtures/distinct70/witness.cnf",
+      "source": "archive:tuning73_report/distinct70/witness.cnf",
+      "source_sha256": "e81fbe84516654b5f5403c76b919ce9a989cd4bd33bff1e6f3f0268d1d175ded"
+    },
+    {
+      "path": "tests/fixtures/distinct70/witness_edges.csv",
+      "source": "archive:tuning73_report/distinct70/witness_edges.csv",
+      "source_sha256": "f8c4832189cc39e1dc8316f653c503c1b491543b3009303467db250b332d4978"
+    },
+    {
+      "path": "tests/fixtures/original73.npy",
+      "source": "archive:tuning73_report/input/original.npy",
+      "source_sha256": "819e91d5440d8030ca390a54302f2ad1c277f95d083cacc2d93f627e67a28f85"
+    },
+    {
+      "path": "examples/d4_m61/points.csv",
+      "source": "archive:geometry4d61/source_points.csv",
+      "source_sha256": "dcfe607d0eaf2dc50f0bc80f8d76295a62aee27cb6918fab04ecc4afd32026e6"
+    },
+    {
+      "path": "examples/d4_m61/witness_edges.csv",
+      "source": "archive:geometry4d61/witness_edges.csv",
+      "source_sha256": "9b8a0a2cad672f06b669f04954ae276cadd594f6425a346c1d44df57c404e4e6"
+    },
+    {
+      "path": "examples/d4_m61/partition.json",
+      "source": "archive:geometry4d61/partition.json",
+      "source_sha256": "44d0bda56e0fa3a88e31a76e933b4ad3aa5830ee8128b3b04cfe368aa657298b"
+    },
+    {
+      "path": "examples/cover49/cover.json",
+      "source": "attachment:edge_skeleton_search/results/reproduced49/cover/cover.json",
+      "source_sha256": "5845139e271264465a16deb827fefd09e9b3d8f08078dc02a477186abcfd75b2"
+    },
+    {
+      "path": "examples/cover49/source_points.csv",
+      "source": "attachment:edge_skeleton_search/results/reproduced49/cover/source_points.csv",
+      "source_sha256": "39d2df017b546e15645cd072d0aeb097c0f59470bbd8945b782999843d3a2f3a"
+    },
+    {
+      "path": "docs/history/AGENTS-original.md",
+      "source": "attachment:AGENTS.md",
+      "source_sha256": "ee58dae0fd76a9bd902aaed2e66f812b9e8dbbf52cbd6da7f8e4fb69f7b47d39"
+    },
+    {
+      "path": "docs/architecture.md",
+      "source": "attachment:docs/architecture.md",
+      "source_sha256": "dda69aa9b89bf6b80202fa3d3ddacb0ec22bdfd7e347691c08c5ac20fc995c1f"
+    },
+    {
+      "path": "docs/history/base-search.md",
+      "source": "archive:borsuk_early_stop/README.md",
+      "source_sha256": "3c335436b7876595eef10f74500cd2ded19049f76487b98366a62a68b37d1cef"
+    },
+    {
+      "path": "docs/history/early-stopping.md",
+      "source": "archive:borsuk_early_stop/EARLY_STOP.md",
+      "source_sha256": "c615845a650408f23f73de67ccddd9d5bcf4186bc392efe7bbfd9c25415e853e"
+    },
+    {
+      "path": "docs/history/tuning.md",
+      "source": "archive:borsuk_tuner/README.md",
+      "source_sha256": "8b8b9ab03dd781195c5734d64db7c61642ebd26f9b92f26660ca5bd566d5f67c"
+    },
+    {
+      "path": "docs/history/splitting.md",
+      "source": "archive:vertex_split_tuner/README.md",
+      "source_sha256": "c0c66f406c891d33d166673afa6005f0df0c80b38a6d00c16baa466e9bfa4ac5"
+    },
+    {
+      "path": "docs/history/paired-splits.md",
+      "source": "archive:tuning73_report/README.md",
+      "source_sha256": "ab48af4430dcc7eb181b3d8955bbf9536edbe1b83a4ed1fa67524c2d2addae6a"
+    },
+    {
+      "path": "docs/history/distillation.md",
+      "source": "archive:distillation_cycle/README.md",
+      "source_sha256": "7bb29e8a8d6f43aa48962d654d41f6fd89ff46ff83961fcc97482bda30562211"
+    },
+    {
+      "path": "docs/history/core-aware.md",
+      "source": "archive:core_aware_generator/README.md",
+      "source_sha256": "3c60cb434b4bb4f36af8a6e20467aa63a1ecf3354c587d3a25acb99cc53e021f"
+    },
+    {
+      "path": "docs/history/surface-search.md",
+      "source": "archive:hull_surface_search/README.md",
+      "source_sha256": "6024bfa7b52c895a3f4ea285c41dddad8bf1c8d092b95eb24c2503f1db8732a2"
+    },
+    {
+      "path": "docs/history/curve-sampling.md",
+      "source": "archive:curve_distillation81/README.md",
+      "source_sha256": "a60a048669121f37f68a9990e619ecd8b47eb71c3d1aa21a1c0988b3d480ddb5"
+    },
+    {
+      "path": "docs/history/geometry4d.md",
+      "source": "archive:geometry4d61/README.md",
+      "source_sha256": "343ecf375df830552df642df182e3102eba2762b78e0cd9310b01f9be8872a32"
+    }
+  ]
+}

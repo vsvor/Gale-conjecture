@@ -1,0 +1,48 @@
+{
+  "cwd": "/mnt/data/borsuk_project",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "core_seed.py",
+    "generate",
+    "--dim",
+    "3",
+    "--points",
+    "31",
+    "--method",
+    "spatial",
+    "--attempts",
+    "1",
+    "--warmup-rounds",
+    "1",
+    "--steps",
+    "5",
+    "--prune-checks",
+    "10",
+    "--pool-factor",
+    "3",
+    "--core-orders",
+    "1",
+    "--seed",
+    "20260911",
+    "--backend",
+    "native",
+    "--sat-timeout",
+    "3",
+    "--out",
+    "/mnt/data/borsuk_project/experiments/assembly-smoke_core3/result"
+  ],
+  "timeout_seconds": 180,
+  "inputs": {
+    "/mnt/data/borsuk_project/templates/source3.npy": "ab19688c55527f5a78e4d582ac0a2c21d296bc214689a6ede1e2c2fd50857445"
+  },
+  "output": "/mnt/data/borsuk_project/experiments/assembly-smoke_core3"
+}
+Console output is recorded in /mnt/data/borsuk_project/experiments/assembly-smoke_core3/console.log
+{
+  "status": "completed",
+  "exit_code": 0,
+  "elapsed_seconds": 0.9197173229999862,
+  "run": "/mnt/data/borsuk_project/experiments/assembly-smoke_core3",
+  "source_changed_during_run": false
+}
+

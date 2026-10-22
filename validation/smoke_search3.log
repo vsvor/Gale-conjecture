@@ -1,0 +1,47 @@
+{
+  "cwd": "/mnt/data/borsuk_project",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "borsuk_search.py",
+    "search",
+    "--dim",
+    "3",
+    "--k",
+    "4",
+    "--points",
+    "16",
+    "--restarts",
+    "4",
+    "--workers",
+    "2",
+    "--rounds",
+    "3",
+    "--steps",
+    "10",
+    "--prune-checks",
+    "10",
+    "--polish",
+    "6",
+    "--seed",
+    "20260911",
+    "--backend",
+    "native",
+    "--sat-timeout",
+    "3",
+    "--early-stop",
+    "--out",
+    "/mnt/data/borsuk_project/experiments/assembly-smoke_search3/result"
+  ],
+  "timeout_seconds": 180,
+  "inputs": {},
+  "output": "/mnt/data/borsuk_project/experiments/assembly-smoke_search3"
+}
+Console output is recorded in /mnt/data/borsuk_project/experiments/assembly-smoke_search3/console.log
+{
+  "status": "completed",
+  "exit_code": 0,
+  "elapsed_seconds": 1.1712424469999405,
+  "run": "/mnt/data/borsuk_project/experiments/assembly-smoke_search3",
+  "source_changed_during_run": false
+}
+

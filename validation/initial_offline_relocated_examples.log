@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/mnt/data/_relocated_workspace/borsuk_project/scripts/verify_examples.py", line 11, in <module>
+    import borsuk_search as bs
+  File "/mnt/data/_relocated_workspace/borsuk_project/borsuk_search.py", line 47, in <module>
+    from scipy.optimize import minimize
+ModuleNotFoundError: No module named 'scipy'

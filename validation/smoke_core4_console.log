@@ -1,0 +1,2 @@
+{"attempt": 0, "R": [0.839902379566169, 0.839902379566169], "required": 5, "anchored_core_sizes": [9], "elapsed": 0.04264335800007757}
+{"selected_attempt": 0, "output": "/mnt/data/borsuk_project/experiments/assembly-smoke_core4/result", "elapsed": 0.04350243100020634}

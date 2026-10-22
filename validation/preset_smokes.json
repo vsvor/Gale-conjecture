@@ -1,0 +1,50 @@
+[
+  {
+    "preset": "configs/smoke_core3.json",
+    "exit_code": 0,
+    "elapsed_seconds": 1.5388656740001352,
+    "status": "completed",
+    "inputs_unchanged": true,
+    "source_changed": false
+  },
+  {
+    "preset": "configs/smoke_core4.json",
+    "exit_code": 0,
+    "elapsed_seconds": 1.6096460029998525,
+    "status": "completed",
+    "inputs_unchanged": true,
+    "source_changed": false
+  },
+  {
+    "preset": "configs/smoke_distill3.json",
+    "exit_code": 0,
+    "elapsed_seconds": 2.2359801829998105,
+    "status": "completed",
+    "inputs_unchanged": true,
+    "source_changed": false
+  },
+  {
+    "preset": "configs/smoke_search3.json",
+    "exit_code": 0,
+    "elapsed_seconds": 1.8562114680000832,
+    "status": "completed",
+    "inputs_unchanged": true,
+    "source_changed": false
+  },
+  {
+    "preset": "configs/smoke_search4.json",
+    "exit_code": 0,
+    "elapsed_seconds": 2.059873572000015,
+    "status": "completed",
+    "inputs_unchanged": true,
+    "source_changed": false
+  },
+  {
+    "preset": "configs/smoke_tune3.json",
+    "exit_code": 0,
+    "elapsed_seconds": 1.8502993399999923,
+    "status": "completed",
+    "inputs_unchanged": true,
+    "source_changed": false
+  }
+]

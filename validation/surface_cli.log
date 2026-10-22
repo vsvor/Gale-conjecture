@@ -1,0 +1,45 @@
+{
+  "cwd": "/mnt/data/borsuk_project",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "surface_search.py",
+    "search",
+    "examples/square",
+    "--k",
+    "2",
+    "--rounds",
+    "1",
+    "--batch",
+    "2",
+    "--max-points",
+    "8",
+    "--pool",
+    "12",
+    "--refine",
+    "0",
+    "--block-pool",
+    "8",
+    "--block-checks",
+    "5",
+    "--polish-iters",
+    "0",
+    "--backend",
+    "native",
+    "--sat-timeout",
+    "2",
+    "--out",
+    "/mnt/data/borsuk_project/experiments/assembly-surface/result"
+  ],
+  "timeout_seconds": 60.0,
+  "inputs": {},
+  "output": "/mnt/data/borsuk_project/experiments/assembly-surface"
+}
+Console output is recorded in /mnt/data/borsuk_project/experiments/assembly-surface/console.log
+{
+  "status": "completed",
+  "exit_code": 0,
+  "elapsed_seconds": 1.0686589899999035,
+  "run": "/mnt/data/borsuk_project/experiments/assembly-surface",
+  "source_changed_during_run": false
+}
+

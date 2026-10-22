@@ -1,0 +1,54 @@
+[
+  {
+    "module": "borsuk_search",
+    "help_exit_code": 0
+  },
+  {
+    "module": "tune_solution",
+    "help_exit_code": 0
+  },
+  {
+    "module": "split_tune",
+    "help_exit_code": 0
+  },
+  {
+    "module": "paired_splits",
+    "help_exit_code": 0
+  },
+  {
+    "module": "replay_pair73",
+    "help_exit_code": 0
+  },
+  {
+    "module": "distill_search",
+    "help_exit_code": 0
+  },
+  {
+    "module": "core_seed",
+    "help_exit_code": 0
+  },
+  {
+    "module": "structured_seed",
+    "help_exit_code": 0
+  },
+  {
+    "module": "compare_curves",
+    "help_exit_code": 0
+  },
+  {
+    "module": "surface_search",
+    "help_exit_code": 0
+  },
+  {
+    "module": "edge_search",
+    "help_exit_code": 0
+  },
+  {
+    "module": "verify_skeleton",
+    "help_exit_code": 0
+  },
+  {
+    "module": "view_solution",
+    "help_exit_code": 0
+  }
+]

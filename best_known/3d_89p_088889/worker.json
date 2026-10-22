@@ -1,0 +1,45 @@
+{
+  "destination": "/mnt/data/distillation_work/reproduction_current/generations/0002/p00_c02/optimized",
+  "completed_rounds": 2,
+  "early_stopped": false,
+  "start_lower": 0.8888253201903541,
+  "result": {
+    "minimum_separation_over_diameter": 3.9572717874818753e-16,
+    "points": 89,
+    "lower": 0.8888923464654452,
+    "upper": 0.8888923464654452,
+    "exact": true,
+    "lower_squared": [
+      "7901296036048453246881553750182450",
+      "10000000000000001768183441369476061"
+    ],
+    "upper_squared": [
+      "7901296036048453246881553750182450",
+      "10000000000000001768183441369476061"
+    ],
+    "coordinates_sha256": "515e80e73ae381d6c050f1735b0d38413ab25ed89c278b703c042e8cbccc0220"
+  },
+  "fit_inliers": 74,
+  "exceptions": [
+    9,
+    12,
+    16,
+    21,
+    44,
+    50,
+    51,
+    52,
+    53,
+    54,
+    56,
+    70,
+    80,
+    81,
+    84
+  ],
+  "solver": {
+    "calls": 508,
+    "unknowns": 0,
+    "cache_hits": 0
+  }
+}

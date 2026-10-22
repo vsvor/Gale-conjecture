@@ -1,0 +1,27 @@
+run 0000 simplex-edges   m= 16 round=-1 R = [0.654940070705, 0.654940070706]
+run 0001 prism-edges     m= 16 round=-1 R = [0.537267332500, 0.537267332501]
+run 0000 simplex-edges   m= 16 round= 0 R = [0.816496573697, 0.816496573698]
+run 0001 prism-edges     m= 16 round= 0 R = [0.816496577733, 0.816496577734]
+run 0001 prism-edges     m= 16 round= 1 R = [0.816496580054, 0.816496580055]
+run 0000 simplex-edges   m= 16 round= 1 R = [0.849937060390, 0.849937060391]
+run 0001 EARLY STOP after 3 rounds: best upper=0.816496580, record lower=0.849937060, gap=0.02; remaining rounds and final polish skipped
+run 0000 simplex-edges   m= 16 round= 2 R = [0.860414496553, 0.860414496554]
+run 0002 sphere          m= 16 round=-1 R = [0.561632834535, 0.561632834536]
+run 0000 simplex-edges   m= 16 round= 3 R = [0.865042763767, 0.865042763768]
+run 0003 simplex-chords  m= 16 round=-1 R = [0.468015195769, 0.468015195770]
+run 0002 sphere          m= 16 round= 0 R = [0.831848174992, 0.831848174993]
+run 0003 simplex-chords  m= 16 round= 0 R = [0.763352833355, 0.763352833356]
+run 0002 sphere          m= 16 round= 1 R = [0.858984202522, 0.858984202523]
+run 0003 simplex-chords  m= 16 round= 1 R = [0.850135523046, 0.850135523047]
+run 0002 sphere          m= 16 round= 2 R = [0.862674504771, 0.862674504772]
+run 0002 sphere          m= 16 round= 3 R = [0.864991530736, 0.864991530737]
+run 0003 simplex-chords  m= 16 round= 2 R = [0.859771699836, 0.859771699837]
+run 0003 simplex-chords  m= 16 round= 3 R = [0.869650841994, 0.869650841995]
+{
+  "best_lower": 0.8696508419946378,
+  "best_directory": "/mnt/data/borsuk_project/experiments/assembly-smoke_search4/result/best",
+  "restarts": 4,
+  "early_stopped": 1,
+  "rounds_completed": 12,
+  "rounds_skipped": 0
+}

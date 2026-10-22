@@ -1,0 +1,14 @@
+{
+  "minimum_separation_over_diameter": 3.9572717874818753e-16,
+  "pairs_closer_than_1e_minus8_D": [
+    [
+      32,
+      77
+    ],
+    [
+      65,
+      66
+    ]
+  ],
+  "qualification": "Insertion spacing does not constrain subsequent free optimization; no automatic merging is performed."
+}

@@ -1,0 +1,44 @@
+{
+  "native": {
+    "verified": true,
+    "backend": "native",
+    "dimension": 3,
+    "m": 65,
+    "k": 4,
+    "witness_status": "UNSAT",
+    "lower_decimal": "0.888111502101",
+    "upper_decimal": "0.888111502102",
+    "bound_decimal_digits": 12,
+    "diameter_squared_integer": "9999999999999999094960362369183995",
+    "min_witness_squared_integer": "7887420401648046950672144846523981",
+    "max_part_squared_integer": "7887420401648046950672144846523981",
+    "distinct_points": 65,
+    "elapsed_seconds": 0.11279520398238674,
+    "evaluation_stats": {
+      "calls": 10,
+      "unknowns": 0,
+      "cache_hits": 0
+    },
+    "threshold_resolved": true,
+    "minimum_pair_distance": 0.014086481680080882,
+    "minimum_pair_squared_integer": "1984289661232543407201219219574",
+    "minimum_pair_distance_over_diameter": 0.014086481680080884
+  },
+  "python": {
+    "verified": true,
+    "backend": "python",
+    "dimension": 3,
+    "m": 65,
+    "k": 4,
+    "witness_status": "UNSAT",
+    "lower_decimal": "0.888111502101",
+    "upper_decimal": "0.888111502102",
+    "bound_decimal_digits": 12,
+    "diameter_squared_integer": "9999999999999999094960362369183995",
+    "min_witness_squared_integer": "7887420401648046950672144846523981",
+    "max_part_squared_integer": "7887420401648046950672144846523981",
+    "distinct_points": 65,
+    "elapsed_seconds": 0.03884331398876384
+  },
+  "qualification": "Exact CSV geometry and two graph-coloring implementations; no independent DRAT/LRAT proof checking."
+}

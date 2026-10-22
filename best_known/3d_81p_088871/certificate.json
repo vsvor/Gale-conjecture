@@ -1,0 +1,33 @@
+{
+  "version": "tuner-1.0",
+  "dimension": 3,
+  "m": 81,
+  "k": 4,
+  "floating_lower": 0.8887119258981534,
+  "floating_upper": 0.8887119258981534,
+  "threshold_resolved": true,
+  "coordinate_decimal_digits": 17,
+  "duplicate_rows_separated_by_1e_minus_17": 0,
+  "witness_edges": 1308,
+  "geometry": {
+    "lower_decimal": "0.888711925898",
+    "upper_decimal": "0.888711925899",
+    "bound_decimal_digits": 12,
+    "diameter_squared_integer": "10000000000000001487979948228119734",
+    "min_witness_squared_integer": "7898088872336050650627160919853969",
+    "max_part_squared_integer": "7898088872336050650627160919853969",
+    "distinct_points": 81
+  },
+  "run": {
+    "source": "final81/best",
+    "removed_indices": [],
+    "original_lower": 0.8887119258981534,
+    "original_upper": 0.8887119258981534,
+    "new_lower": 0.8887119258981534,
+    "new_upper": 0.8887119258981534,
+    "difference": 0.0,
+    "exact_ratio_preserved": true,
+    "qualification": "Removal proposed by floating closeness; ratio is independently reevaluated, not assumed preserved."
+  },
+  "qualification": "Geometry and comparisons use integer arithmetic. Graph UNSAT results are not independently proof-logged. SLSQP/LP reports are numerical fixed-graph diagnostics, not optimality proofs."
+}

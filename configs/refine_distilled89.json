@@ -1,0 +1,22 @@
+{
+  "description": "Bounded R3 witness refresh with eight fitted insertions and a no-insertion control. Reproduce the 20260924 improvement with --seed 20260924 --backend native; inspect and verify the saved CSV certificate before claiming a record.",
+  "timeout_seconds": 240,
+  "inputs": [
+    "best_known/3d_89p_088889/points.csv",
+    "best_known/3d_89p_088889/witness_edges.csv",
+    "best_known/3d_89p_088889/partition.json",
+    "best_known/3d_89p_088889/certificate.json",
+    "best_known/3d_89p_088889/model.json",
+    "best_known/3d_89p_088889/lineage.json"
+  ],
+  "command": [
+    "{python}", "distill_search.py", "search", "best_known/3d_89p_088889",
+    "--out", "{out}", "--backend", "{backend}", "--seed", "{seed}",
+    "--sat-timeout", "0.5", "--workers", "1",
+    "--cycles", "1", "--children", "2", "--beam", "1",
+    "--add", "8", "--max-points", "97", "--fit-iters", "30",
+    "--local-rounds", "3", "--steps", "40", "--prune-checks", "700",
+    "--slacks", "0,0.004,0.012", "--slsqp-iters", "180",
+    "--polish-passes", "1", "--final-polish-passes", "0"
+  ]
+}
